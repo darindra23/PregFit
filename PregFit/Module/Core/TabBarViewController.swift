@@ -17,6 +17,7 @@ class TabBarViewController: UITabBarController {
 
 private extension TabBarViewController {
     func setup() {
+    
         tabBar.tintColor = UIColor(hexString: "#D4A95F")
         setViewControllers([programsTabBar(), exercisesTabBar()], animated: false)
     }
