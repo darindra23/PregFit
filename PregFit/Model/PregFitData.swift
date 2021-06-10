@@ -107,7 +107,8 @@ struct PregFitData {
             for program in programs {
                 listExercises.append(contentsOf: program.exercises)
             }
-            return listExercises
+
+            return listExercises.sorted { $0.exerciseName < $1.exerciseName }
         }
     }
 }
