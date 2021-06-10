@@ -10,6 +10,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ProgramsViewController" customModule="PregFit" customModuleProvider="target">
             <connections>
+                <outlet property="collectionView" destination="X6z-FV-7Ja" id="dUE-DP-ZeA"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -17,9 +18,35 @@
         <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
             <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="X6z-FV-7Ja">
+                    <rect key="frame" x="0.0" y="121" width="414" height="741"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="ZHM-at-IDN">
+                        <size key="itemSize" width="128" height="128"/>
+                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    </collectionViewFlowLayout>
+                </collectionView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="3rd Trimester Programs" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gfY-q2-uI4">
+                    <rect key="frame" x="16" y="64" width="236" height="27"/>
+                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="22"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-            <point key="canvasLocation" x="139" y="146"/>
+            <constraints>
+                <constraint firstItem="X6z-FV-7Ja" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="289-Me-FDV"/>
+                <constraint firstItem="gfY-q2-uI4" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="20" id="PeD-gU-Fj8"/>
+                <constraint firstItem="gfY-q2-uI4" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="Xa1-U7-p8m"/>
+                <constraint firstItem="X6z-FV-7Ja" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="Zvn-nM-sAE"/>
+                <constraint firstItem="X6z-FV-7Ja" firstAttribute="top" secondItem="gfY-q2-uI4" secondAttribute="bottom" constant="30" id="nzA-q1-1d7"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="X6z-FV-7Ja" secondAttribute="bottom" id="t9Y-t0-q8J"/>
+            </constraints>
+            <point key="canvasLocation" x="137.68115942028987" y="145.98214285714286"/>
         </view>
     </objects>
     <resources>
