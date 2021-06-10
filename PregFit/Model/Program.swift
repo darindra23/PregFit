@@ -13,5 +13,7 @@ struct Program {
     var kcal: Int
     var exercises: [Exercise]
     var image: UIImage?
+    var imageDetail: UIImage?
+    
 }
 
