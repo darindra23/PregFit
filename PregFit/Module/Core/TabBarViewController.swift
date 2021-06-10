@@ -17,6 +17,10 @@ class TabBarViewController: UITabBarController {
 
 private extension TabBarViewController {
     func setup() {
+//
+//        let programDetailVC = ProgramDetailViewController(nibName: "ProgramDetailViewController", bundle: nil)
+//        let programDetailNavVC = UINavigationController(rootViewController: programDetailVC)
+//
         tabBar.tintColor = UIColor(hexString: "#D4A95F")
         setViewControllers([programsTabBar(), exercisesTabBar()], animated: false)
     }
