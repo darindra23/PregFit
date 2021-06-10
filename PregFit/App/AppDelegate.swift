@@ -14,11 +14,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     var window: UIWindow?
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
+
         let window = UIWindow(frame: UIScreen.main.bounds)
         window.rootViewController = TabBarViewController()
         window.makeKeyAndVisible()
         self.window = window
 
+        setupDefaultNavbar()
         return true
     }
 
@@ -33,6 +35,21 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Called when the user discards a scene session.
         // If any sessions were discarded while the application was not running, this will be called shortly after application:didFinishLaunchingWithOptions.
         // Use this method to release any resources that were specific to the discarded scenes, as they will not return.
+    }
+}
+
+fileprivate extension AppDelegate {
+    func setupDefaultNavbar() {
+        if #available(iOS 13.0, *) {
+            let appearance = UINavigationBarAppearance()
+            appearance.configureWithDefaultBackground()
+            appearance.backgroundColor = .primaryBackground
+            UINavigationBar.appearance().standardAppearance = appearance
+            UINavigationBar.appearance().scrollEdgeAppearance = appearance
+            UINavigationBar.appearance().compactAppearance = appearance
+        } else {
+            UINavigationBar.appearance().barTintColor = .primaryBackground
+        }
     }
 }
 
