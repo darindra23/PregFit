@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2192421B267094F40077324F /* ProgramCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21924219267094F40077324F /* ProgramCell.swift */; };
+		2192421C267094F40077324F /* ProgramCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2192421A267094F40077324F /* ProgramCell.xib */; };
 		6E3AA172266FBBFC0071AC4D /* Program.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E3AA171266FBBFC0071AC4D /* Program.swift */; };
 		6E3AA174266FBC100071AC4D /* Exercise.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E3AA173266FBC100071AC4D /* Exercise.swift */; };
 		6E3AA176266FCCD20071AC4D /* PregFitData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E3AA175266FCCD20071AC4D /* PregFitData.swift */; };
@@ -25,6 +27,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		21924219267094F40077324F /* ProgramCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgramCell.swift; sourceTree = "<group>"; };
+		2192421A267094F40077324F /* ProgramCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProgramCell.xib; sourceTree = "<group>"; };
 		6E3AA171266FBBFC0071AC4D /* Program.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Program.swift; sourceTree = "<group>"; };
 		6E3AA173266FBC100071AC4D /* Exercise.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Exercise.swift; sourceTree = "<group>"; };
 		6E3AA175266FCCD20071AC4D /* PregFitData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PregFitData.swift; sourceTree = "<group>"; };
@@ -55,6 +59,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2184B6EF2671D9A4000C9C0B /* Program Detail */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Program Detail";
+			sourceTree = "<group>";
+		};
+		21924218267094860077324F /* Program Cell */ = {
+			isa = PBXGroup;
+			children = (
+				21924219267094F40077324F /* ProgramCell.swift */,
+				2192421A267094F40077324F /* ProgramCell.xib */,
+			);
+			path = "Program Cell";
+			sourceTree = "<group>";
+		};
 		6EA4B9D5266DDD5700295C31 = {
 			isa = PBXGroup;
 			children = (
@@ -175,6 +195,8 @@
 		6EA4BA04266DE44100295C31 /* Programs */ = {
 			isa = PBXGroup;
 			children = (
+				2184B6EF2671D9A4000C9C0B /* Program Detail */,
+				21924218267094860077324F /* Program Cell */,
 				6EA4BA06266DE47800295C31 /* ProgramsViewController.swift */,
 				6EA4BA07266DE47800295C31 /* Programs.xib */,
 			);
@@ -251,6 +273,7 @@
 				6EA4B9F1266DDD5800295C31 /* LaunchScreen.storyboard in Resources */,
 				6EA4BA0D266DE4A100295C31 /* Exercises.xib in Resources */,
 				6EA4B9EE266DDD5800295C31 /* Assets.xcassets in Resources */,
+				2192421C267094F40077324F /* ProgramCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -263,6 +286,7 @@
 			files = (
 				6E3AA176266FCCD20071AC4D /* PregFitData.swift in Sources */,
 				6EA4B9E6266DDD5700295C31 /* TabBarViewController.swift in Sources */,
+				2192421B267094F40077324F /* ProgramCell.swift in Sources */,
 				6EA4B9EC266DDD5700295C31 /* PregFit.xcdatamodeld in Sources */,
 				6E3AA172266FBBFC0071AC4D /* Program.swift in Sources */,
 				6EA4BA0C266DE4A100295C31 /* ExercisesViewController.swift in Sources */,
