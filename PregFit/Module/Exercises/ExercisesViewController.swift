@@ -20,7 +20,7 @@ class ExercisesViewController: UIViewController {
 
 fileprivate extension ExercisesViewController {
     func setup() {
-        searchBar.delegate = self
+       // searchBar.delegate = self
         tableView.dataSource = self
         tableView.delegate = self
         tableView.register(ExercisesCell.nib, forCellReuseIdentifier: ExercisesCell.identifier)
@@ -44,8 +44,8 @@ extension ExercisesViewController: UITableViewDataSource, UITableViewDelegate {
     }
 }
 
-extension ExercisesViewController: UISearchBarDelegate {
-    func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
-        <#code#>
-    }
-}
+//extension ExercisesViewController: UISearchBarDelegate {
+//    func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
+//        <#code#>
+//    }
+//}
