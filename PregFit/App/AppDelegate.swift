@@ -42,13 +42,18 @@ fileprivate extension AppDelegate {
     func setupDefaultNavbar() {
         if #available(iOS 13.0, *) {
             let appearance = UINavigationBarAppearance()
-            appearance.configureWithDefaultBackground()
+            appearance.configureWithOpaqueBackground()
             appearance.backgroundColor = .primaryBackground
+
             UINavigationBar.appearance().standardAppearance = appearance
             UINavigationBar.appearance().scrollEdgeAppearance = appearance
             UINavigationBar.appearance().compactAppearance = appearance
+            UINavigationBar.appearance().tintColor = .black
+
+
         } else {
             UINavigationBar.appearance().barTintColor = .primaryBackground
+            UINavigationBar.appearance().tintColor = .black
         }
     }
 }

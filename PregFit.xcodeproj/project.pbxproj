@@ -91,14 +91,14 @@
 			path = "Program Cell";
 			sourceTree = "<group>";
 		};
-		6E3AA19A2671CD240071AC4D /* Cell */ = {
+		6E3AA19A2671CD240071AC4D /* Exercises Cell */ = {
 			isa = PBXGroup;
 			children = (
 				6E3AA19B2671CD8E0071AC4D /* ExercisesCell.swift */,
 				6E3AA19C2671CD8E0071AC4D /* ExercisesCell.xib */,
 				6E3AA19F2671D4E50071AC4D /* ExercisesViewModel.swift */,
 			);
-			path = Cell;
+			path = "Exercises Cell";
 			sourceTree = "<group>";
 		};
 		6EA4B9D5266DDD5700295C31 = {
@@ -234,7 +234,7 @@
 		6EA4BA05266DE44B00295C31 /* Exercises */ = {
 			isa = PBXGroup;
 			children = (
-				6E3AA19A2671CD240071AC4D /* Cell */,
+				6E3AA19A2671CD240071AC4D /* Exercises Cell */,
 				6EA4BA0A266DE4A100295C31 /* ExercisesViewController.swift */,
 				6EA4BA0B266DE4A100295C31 /* Exercises.xib */,
 			);
