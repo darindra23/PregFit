@@ -8,11 +8,12 @@
 import UIKit
 
 class ReusableCell: UITableViewCell {
-    
+    @IBOutlet weak var indexViewContainer: UIView!
     @IBOutlet weak var indexLbl: UILabel!
     @IBOutlet weak var nameExerciseLbl: UILabel!
-    
+
     static let identifier = "ReusableCell"
+
     var index: Int? {
         didSet {
             if let filled = index {
@@ -20,10 +21,10 @@ class ReusableCell: UITableViewCell {
             }
         }
     }
-    
-    var exercise: Exercise?{
-        didSet{
-            if let filled = exercise{
+
+    var exercise: Exercise? {
+        didSet {
+            if let filled = exercise {
                 nameExerciseLbl.text = filled.exerciseName
             }
         }
@@ -31,17 +32,17 @@ class ReusableCell: UITableViewCell {
 
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
+        setup()
     }
 
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
-    }
-    
     static func nib() -> UINib {
         return UINib(nibName: "ReusableCell", bundle: nil)
     }
-    
+}
+
+private extension ReusableCell {
+    func setup() {
+        indexViewContainer.layer.cornerRadius = self.indexViewContainer.frame.size.width / 2
+        indexViewContainer.clipsToBounds = true
+    }
 }
