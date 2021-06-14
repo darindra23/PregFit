@@ -12,6 +12,7 @@
             <connections>
                 <outlet property="buttonStart" destination="jY2-7a-3YD" id="VA8-gQ-6Z4"/>
                 <outlet property="durationProgramDetailLbl" destination="fIO-jj-hKA" id="HSN-iC-1Ia"/>
+                <outlet property="exerciseTableView" destination="KTV-7H-drm" id="Hgu-Zi-B5h"/>
                 <outlet property="imageProgramDetail" destination="uwz-S9-vli" id="pAK-vs-LEL"/>
                 <outlet property="kcalProgramDetailLbl" destination="2S0-g4-48M" id="oXD-re-mzh"/>
                 <outlet property="nameProgramDetailLbl" destination="tUG-c1-PPw" id="Nop-bl-9EQ"/>

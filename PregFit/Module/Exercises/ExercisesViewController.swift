@@ -22,7 +22,7 @@ class ExercisesViewController: UIViewController {
 
 fileprivate extension ExercisesViewController {
     func setup() {
-        searchBar.delegate = self
+       // searchBar.delegate = self
         tableView.dataSource = self
         tableView.delegate = self
         tableView.tableFooterView = UIView()
