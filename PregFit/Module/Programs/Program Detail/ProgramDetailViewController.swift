@@ -7,7 +7,7 @@
 
 import UIKit
 
-class ProgramDetailViewController: UIViewController, UITableViewDataSource, UITableViewDelegate{
+class ProgramDetailViewController: UIViewController {
 
     @IBOutlet weak var imageProgramDetail: UIImageView!
     @IBOutlet weak var nameProgramDetailLbl: UILabel!
@@ -15,7 +15,7 @@ class ProgramDetailViewController: UIViewController, UITableViewDataSource, UITa
     @IBOutlet weak var kcalProgramDetailLbl: UILabel!
     @IBOutlet weak var buttonStart: UIButton!
     @IBOutlet weak var exerciseTableView: UITableView!
-    
+
     static let identifier = "ProgramDetailViewController"
 
     var program: Program?
@@ -24,29 +24,15 @@ class ProgramDetailViewController: UIViewController, UITableViewDataSource, UITa
         super.viewDidLoad()
         setup()
     }
-    
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return program?.exercises.count ?? 0
-    }
-    
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: ReusableCell.identifier, for: indexPath) as! ReusableCell
-        cell.exercise = program?.exercises[indexPath.row]
-        cell.index = indexPath.row + 1 
-        return cell
-    }
-    
 }
 
 fileprivate extension ProgramDetailViewController {
     func setup() {
-        
         exerciseTableView.dataSource = self
         exerciseTableView.delegate = self
         exerciseTableView.register(ReusableCell.nib(), forCellReuseIdentifier: ReusableCell.identifier)
-        
-        navigationController?.navigationBar.prefersLargeTitles = false
-        
+
+        self.navigationItem.largeTitleDisplayMode = .never
         buttonStart.dropShadow()
 
         if let filled = program {
@@ -55,6 +41,19 @@ fileprivate extension ProgramDetailViewController {
             durationProgramDetailLbl.text = "\(filled.duration) Minutes | "
             kcalProgramDetailLbl.text = "\(filled.kcal) Kcal"
         }
+    }
+}
+
+extension ProgramDetailViewController: UITableViewDataSource, UITableViewDelegate {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return program?.exercises.count ?? 0
+    }
+
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: ReusableCell.identifier, for: indexPath) as! ReusableCell
+        cell.exercise = program?.exercises[indexPath.row]
+        cell.index = indexPath.row + 1
+        return cell
     }
 }
 
