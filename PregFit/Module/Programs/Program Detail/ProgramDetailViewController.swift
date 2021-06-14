@@ -17,9 +17,9 @@ class ProgramDetailViewController: UIViewController, UITableViewDataSource, UITa
     @IBOutlet weak var exerciseTableView: UITableView!
     
     static let identifier = "ProgramDetailViewController"
-    
+
     var program: Program?
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
         setup()
@@ -48,8 +48,8 @@ fileprivate extension ProgramDetailViewController {
         navigationController?.navigationBar.prefersLargeTitles = false
         
         buttonStart.dropShadow()
-        
-        if let filled = program{
+
+        if let filled = program {
             imageProgramDetail.image = filled.imageDetail
             nameProgramDetailLbl.text = filled.name
             durationProgramDetailLbl.text = "\(filled.duration) Minutes | "
