@@ -17,8 +17,8 @@ class TabBarViewController: UITabBarController {
 
 private extension TabBarViewController {
     func setup() {
-    
-        tabBar.tintColor = UIColor(hexString: "#D4A95F")
+        tabBar.tintColor = .primaryBackground
+        tabBar.unselectedItemTintColor = UIColor(hexString: "#DFDFDF")
         setViewControllers([programsTabBar(), exercisesTabBar()], animated: false)
     }
 

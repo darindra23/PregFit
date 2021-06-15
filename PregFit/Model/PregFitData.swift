@@ -49,7 +49,7 @@ struct PregFitData {
                              requirements: ["Yoga Map", "Dumbbell 1 Kg"],
                              steps: ["Hold a dumbbell in each hand with your palms facing in toward each other, keeping your knees bent slightly. Engage your core and maintain a straight spine as you hinge forward at the waist, bringing your torso almost parallel to the floor.", "Keep your upper arms in close to your body and your head in line with your spine, tucking your chin in slightly. On an exhale, engage your triceps by straightening your elbows.", "Hold your upper arms still, only moving your forearms during this movement. Pause here, then inhale to return the weights to the starting position."],
                              videoURL: "https://youtu.be/ShCYaoHmWmk"),
-                ], image: UIImage(named: "Dumbbell")),
+                ], image: UIImage(named: "Dumbbell"), imageDetail: UIImage(named: "ProgramDumbbell")),
                 Program(name: "Relaxing Yoga Poses", duration: 12, kcal: 45, exercises: [
                     Exercise(exerciseName: "Easy Pose",
                              requirements: ["Yoga Map"],
@@ -96,7 +96,7 @@ struct PregFitData {
                              requirements: ["Yoga Map", "Pillow"],
                              steps: ["Sit on the ground come into Buddha konasana (butterfly pose) by bringing the bottoms of your feet together in front of you. Wrap your hands around your feet and sit tall for a few breaths.", "Once you settle into the pose, start to hinge forward at your hips to deepen the stretch."],
                              videoURL: "https://youtu.be/xPeL1FbJUpc"),
-                ], image: UIImage(named: "Yoga")),
+                ], image: UIImage(named: "Yoga"), imageDetail: UIImage(named: "ProgramYoga")),
             ]
         }
     }
@@ -107,7 +107,8 @@ struct PregFitData {
             for program in programs {
                 listExercises.append(contentsOf: program.exercises)
             }
-            return listExercises
+
+            return listExercises.sorted { $0.exerciseName < $1.exerciseName }
         }
     }
 }
