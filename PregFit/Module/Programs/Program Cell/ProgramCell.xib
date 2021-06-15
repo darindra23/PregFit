@@ -20,7 +20,7 @@
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Zmp-UO-xTR">
                         <rect key="frame" x="0.0" y="0.0" width="343" height="224"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ProgramDumbbell" translatesAutoresizingMaskIntoConstraints="NO" id="d0Y-Wr-XVy">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Dumbbell" translatesAutoresizingMaskIntoConstraints="NO" id="d0Y-Wr-XVy">
                                 <rect key="frame" x="0.0" y="0.0" width="343" height="224"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="55 Kcal" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="lis-SW-rKl">
@@ -79,7 +79,7 @@
         </collectionViewCell>
     </objects>
     <resources>
-        <image name="ProgramDumbbell" width="1004" height="543"/>
+        <image name="Dumbbell" width="351" height="232"/>
         <image name="clock.arrow.circlepath" catalog="system" width="128" height="110"/>
         <image name="flame" catalog="system" width="108" height="128"/>
         <systemColor name="labelColor">
