@@ -13,6 +13,7 @@ class ProgramsViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setup()
+        
     }
 }
 
