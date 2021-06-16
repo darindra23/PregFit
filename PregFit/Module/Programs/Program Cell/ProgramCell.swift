@@ -10,12 +10,15 @@ import UIKit
 class ProgramCell: UICollectionViewCell {
 
 
+    @IBOutlet weak var viewProgramCell: UIView!
     @IBOutlet weak var imageProgram: UIImageView!
     @IBOutlet weak var nameProgramLbl: UILabel!
     @IBOutlet weak var durationProgramLbl: UILabel!
     @IBOutlet weak var kcalProgramLbl: UILabel!
     
     static let identifier = "programCell"
+    
+    var didClick: (() -> ())?
     
     var program: Program?{
         didSet{
@@ -24,6 +27,8 @@ class ProgramCell: UICollectionViewCell {
                 nameProgramLbl.text = filled.name
                 durationProgramLbl.text = "\(filled.duration) Minutes | "
                 kcalProgramLbl.text = "\(filled.kcal) Kcal"
+                let tap = UITapGestureRecognizer(target: self, action: #selector(self.programPressed(_:)))
+                viewProgramCell.addGestureRecognizer(tap)
             }
         }
     }
@@ -31,6 +36,10 @@ class ProgramCell: UICollectionViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
         
+    }
+    
+    @objc func programPressed(_: UITapGestureRecognizer) {
+        didClick?()
     }
 
     static func nib() -> UINib {
