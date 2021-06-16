@@ -17,9 +17,14 @@ class TabBarViewController: UITabBarController {
 
 private extension TabBarViewController {
     func setup() {
+        
+        let startExercievc = StartExerciseViewController(nibName: "StartExerciseViewController", bundle: nil)
+        navigationController?.pushViewController(startExercievc, animated: true)
+        
         tabBar.tintColor = .primaryBackground
         tabBar.unselectedItemTintColor = UIColor(hexString: "#DFDFDF")
-        setViewControllers([programsTabBar(), exercisesTabBar()], animated: false)
+        setViewControllers([startExercievc, exercisesTabBar()], animated: false)
+        //programsTabBar()
     }
 
     func programsTabBar() -> UINavigationController {
