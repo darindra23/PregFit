@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="StartExerciseViewController" customModule="PregFit" customModuleProvider="target">
+            <connections>
+                <outlet property="imageStartExercise" destination="5IX-87-lIY" id="xQD-Uw-M8h"/>
+                <outlet property="timerUiView" destination="syh-Ac-snp" id="gwy-Yv-ota"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1/9 " textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uJE-aG-qCX">
+                    <rect key="frame" x="20" y="44" width="350" height="18"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xrZ-Li-bui">
+                    <rect key="frame" x="350" y="314" width="20" height="22"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <color key="tintColor" red="0.69423180819999997" green="0.69382983450000002" blue="0.70980703830000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    <state key="normal" image="info.circle" catalog="system"/>
+                </button>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="syh-Ac-snp" customClass="PFTimerView" customModule="PregFit" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="358" width="390" height="300"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="300" id="9l7-6Y-FcF"/>
+                    </constraints>
+                </view>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Ankle to Knee Pose" translatesAutoresizingMaskIntoConstraints="NO" id="5IX-87-lIY">
+                    <rect key="frame" x="20" y="70" width="350" height="222"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="222" id="N3D-rc-WTn"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="string" keyPath="layer.cornerRadius" value="10"/>
+                    </userDefinedRuntimeAttributes>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Try to do the exercise above as many as you can..." lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1kp-kB-V6t">
+                    <rect key="frame" x="22" y="308" width="218" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="Fcw-qg-HsY"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <color key="textColor" red="0.69562852379999995" green="0.69563871619999995" blue="0.70968288180000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Skip" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bAa-fM-0Kw">
+                    <rect key="frame" x="20" y="668" width="350" height="21"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="5IX-87-lIY" firstAttribute="top" secondItem="uJE-aG-qCX" secondAttribute="bottom" constant="8" id="5jY-4l-O1d"/>
+                <constraint firstItem="bAa-fM-0Kw" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="5mq-gT-7WK"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="1kp-kB-V6t" secondAttribute="trailing" constant="150" id="6QS-sA-9lA"/>
+                <constraint firstItem="bAa-fM-0Kw" firstAttribute="top" secondItem="syh-Ac-snp" secondAttribute="bottom" constant="10" id="6Ro-ml-oCy"/>
+                <constraint firstItem="1kp-kB-V6t" firstAttribute="top" secondItem="5IX-87-lIY" secondAttribute="bottom" constant="16" id="7Wq-ui-VXh"/>
+                <constraint firstItem="syh-Ac-snp" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="8r6-S0-Y2L"/>
+                <constraint firstItem="uJE-aG-qCX" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="96Z-NY-ymG"/>
+                <constraint firstItem="5IX-87-lIY" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="Cbb-2m-s4C"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="5IX-87-lIY" secondAttribute="trailing" constant="20" id="DYk-lV-0qy"/>
+                <constraint firstItem="uJE-aG-qCX" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="H0Q-aG-ceG"/>
+                <constraint firstItem="syh-Ac-snp" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="PwE-xr-L9N"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="bAa-fM-0Kw" secondAttribute="trailing" constant="20" id="dup-bi-v7H"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="uJE-aG-qCX" secondAttribute="trailing" constant="20" id="nrM-QQ-MVf"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="xrZ-Li-bui" secondAttribute="trailing" constant="20" id="nuk-I3-ZV3"/>
+                <constraint firstItem="1kp-kB-V6t" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="22" id="p1K-Wv-aWM"/>
+                <constraint firstItem="xrZ-Li-bui" firstAttribute="top" secondItem="5IX-87-lIY" secondAttribute="bottom" constant="22" id="taT-er-NMZ"/>
+                <constraint firstItem="syh-Ac-snp" firstAttribute="top" secondItem="1kp-kB-V6t" secondAttribute="bottom" constant="10" id="xJa-EM-MkA"/>
+            </constraints>
+            <point key="canvasLocation" x="137.68115942028987" y="145.98214285714286"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="Ankle to Knee Pose" width="811" height="541.66668701171875"/>
+        <image name="info.circle" catalog="system" width="128" height="121"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
