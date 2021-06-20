@@ -16,7 +16,8 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         guard let windowScene = (scene as? UIWindowScene) else { return }
 
         let window = UIWindow(windowScene: windowScene)
-        window.rootViewController = OnBoardingViewController()
+        let isLogin: Bool = UserDefaults.standard.bool(forKey: "isLogin")
+        window.rootViewController = !isLogin ? OnBoardingViewController() : TabBarViewController()
         window.makeKeyAndVisible()
         self.window = window
     }

@@ -18,12 +18,3 @@ extension UIView {
         layer.rasterizationScale = scale ? UIScreen.main.scale : 1
     }
 }
-
-extension UIView {
-    @IBInspectable var cornerRadius: CGFloat {
-        set {
-        get { return cornerRadius }
-            self.layer.cornerRadius = newValue
-        }
-    }
-}

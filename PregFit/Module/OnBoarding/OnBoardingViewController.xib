@@ -24,7 +24,7 @@
                 <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" bouncesZoom="NO" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="QvT-RD-847">
                     <rect key="frame" x="0.0" y="0.0" width="414" height="642"/>
                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                    <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="0.0" id="nNh-cc-hte">
+                    <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" automaticEstimatedItemSize="YES" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="nNh-cc-hte">
                         <size key="itemSize" width="128" height="128"/>
                         <size key="headerReferenceSize" width="0.0" height="0.0"/>
                         <size key="footerReferenceSize" width="0.0" height="0.0"/>
@@ -74,109 +74,8 @@
             </constraints>
             <point key="canvasLocation" x="147.82608695652175" y="152.67857142857142"/>
         </view>
-        <viewController id="ogG-bD-FLe">
-            <view key="view" contentMode="scaleToFill" id="FZb-TF-9pE">
-                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                <subviews>
-                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" fixedFrame="YES" image="Onboarding" translatesAutoresizingMaskIntoConstraints="NO" id="TIe-zg-tHs">
-                        <rect key="frame" x="0.0" y="-7" width="414" height="144"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    </imageView>
-                    <pageControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" currentPage="1" translatesAutoresizingMaskIntoConstraints="NO" id="V8e-lc-cPw">
-                        <rect key="frame" x="146" y="711" width="122" height="28"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <color key="backgroundColor" systemColor="separatorColor"/>
-                        <color key="currentPageIndicatorTintColor" systemColor="labelColor"/>
-                    </pageControl>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="When should you stop exercising?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="p8n-Xa-of7">
-                        <rect key="frame" x="106" y="424" width="202" height="48"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                        <color key="textColor" systemColor="secondaryLabelColor"/>
-                        <nil key="highlightedColor"/>
-                    </label>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Fleck or Bleeding, Pain on your belly, or Bodily fatigue" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dgY-RE-jA0">
-                        <rect key="frame" x="94" y="523" width="226" height="58"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
-                        <color key="textColor" red="0.51689612870000001" green="0.49180632829999998" blue="0.38037437200000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                        <nil key="highlightedColor"/>
-                    </label>
-                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" fixedFrame="YES" image="hand.raised.slash.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="hh5-eH-dmv">
-                        <rect key="frame" x="132" y="265.5" width="150" height="150"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <color key="tintColor" red="0.51689612870000001" green="0.49180632829999998" blue="0.38037437200000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                    </imageView>
-                </subviews>
-                <viewLayoutGuide key="safeArea" id="sqi-ll-G0R"/>
-                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-            </view>
-            <point key="canvasLocation" x="1750.7246376811595" y="152.67857142857142"/>
-        </viewController>
-        <viewController id="eff-WZ-hgS">
-            <view key="view" contentMode="scaleToFill" id="t1c-nF-z9y">
-                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                <subviews>
-                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" fixedFrame="YES" image="Onboarding" translatesAutoresizingMaskIntoConstraints="NO" id="5DJ-td-xuC">
-                        <rect key="frame" x="0.0" y="-8" width="414" height="144"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    </imageView>
-                    <pageControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" currentPage="2" translatesAutoresizingMaskIntoConstraints="NO" id="9zG-b5-x9X">
-                        <rect key="frame" x="146" y="711" width="122" height="28"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <color key="backgroundColor" systemColor="separatorColor"/>
-                        <color key="currentPageIndicatorTintColor" systemColor="labelColor"/>
-                    </pageControl>
-                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dz0-I0-UEs">
-                        <rect key="frame" x="157" y="782" width="100" height="50"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <color key="backgroundColor" red="0.51689612870000001" green="0.49180632829999998" blue="0.38037437200000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
-                        <state key="normal" title="Accept">
-                            <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        </state>
-                    </button>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="What do you need to prepare before exercising?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8SM-mS-Spo">
-                        <rect key="frame" x="106" y="424" width="202" height="48"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                        <color key="textColor" systemColor="secondaryLabelColor"/>
-                        <nil key="highlightedColor"/>
-                    </label>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Wear an Apple Watch, Use sport clothing, Prepare required equipments, and being pregnant" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UGa-8k-944">
-                        <rect key="frame" x="94" y="520" width="226" height="97"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
-                        <color key="textColor" red="0.51689612870000001" green="0.49180632829999998" blue="0.38037437200000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                        <nil key="highlightedColor"/>
-                    </label>
-                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" fixedFrame="YES" image="headphones.circle.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="zhc-ay-xem">
-                        <rect key="frame" x="132" y="266.5" width="150" height="149"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <color key="tintColor" red="0.51689612870000001" green="0.49180632829999998" blue="0.38037437200000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                    </imageView>
-                </subviews>
-                <viewLayoutGuide key="safeArea" id="eBw-lJ-2AX"/>
-                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-            </view>
-            <point key="canvasLocation" x="2573.913043478261" y="152.67857142857142"/>
-        </viewController>
     </objects>
     <resources>
-        <image name="Onboarding" width="371" height="120"/>
-        <image name="hand.raised.slash.fill" catalog="system" width="128" height="124"/>
-        <image name="headphones.circle.fill" catalog="system" width="128" height="121"/>
-        <systemColor name="labelColor">
-            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
-        <systemColor name="secondaryLabelColor">
-            <color red="0.23529411764705882" green="0.23529411764705882" blue="0.2627450980392157" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
-        <systemColor name="separatorColor">
-            <color red="0.23529411764705882" green="0.23529411764705882" blue="0.2627450980392157" alpha="0.28999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
