@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Image references" minToolsVersion="12.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="TimerViewController" customModule="PregFit" customModuleProvider="target">
+            <connections>
+                <outlet property="pauseButton" destination="bLh-k8-nPo" id="xl4-VR-tQP"/>
+                <outlet property="skipButton" destination="hKm-ui-yFe" id="pBS-G6-Jad"/>
+                <outlet property="timerView" destination="6Zh-r2-pg0" id="NfB-oI-PJX"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6Zh-r2-pg0" customClass="PFTimerView" customModule="PregFit" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="184" width="414" height="300"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="300" id="QAv-rp-dKf"/>
+                    </constraints>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hKm-ui-yFe">
+                    <rect key="frame" x="177" y="628" width="60" height="44"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="60" id="cpQ-vW-Gym"/>
+                        <constraint firstAttribute="height" constant="44" id="zdi-zX-HeK"/>
+                    </constraints>
+                    <state key="normal" title="Skip">
+                        <attributedString key="attributedTitle">
+                            <fragment content="Skip">
+                                <attributes>
+                                    <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                    <font key="NSFont" size="20" name="SFProText-Bold"/>
+                                    <font key="NSOriginalFont" size="20" name="SFProText-Bold"/>
+                                    <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                </attributes>
+                            </fragment>
+                        </attributedString>
+                    </state>
+                    <connections>
+                        <action selector="skipAction:" destination="-1" eventType="touchUpInside" id="gLw-fr-vlv"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Let’s take a break for a minute" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MgN-hp-UPA">
+                    <rect key="frame" x="107" y="95" width="201" height="53"/>
+                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="22"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bLh-k8-nPo">
+                    <rect key="frame" x="169.5" y="727" width="75" height="75"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="75" id="VvL-CZ-hzz"/>
+                        <constraint firstAttribute="width" constant="75" id="qZa-qe-5oy"/>
+                    </constraints>
+                    <color key="tintColor" red="0.51372549020000002" green="0.49019607840000001" blue="0.3921568627" alpha="1" colorSpace="calibratedRGB"/>
+                    <state key="normal">
+                        <imageReference key="image" image="pause.circle.fill" catalog="system" symbolScale="large"/>
+                        <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="50"/>
+                    </state>
+                    <connections>
+                        <action selector="pauseAction:" destination="-1" eventType="touchUpInside" id="N7N-hl-Od9"/>
+                    </connections>
+                </button>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="bLh-k8-nPo" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="17B-48-6OW"/>
+                <constraint firstItem="MgN-hp-UPA" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="51" id="17O-7C-XKh"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="bLh-k8-nPo" secondAttribute="bottom" constant="60" id="25L-nm-9gm"/>
+                <constraint firstItem="MgN-hp-UPA" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="107" id="GZ1-QL-64B"/>
+                <constraint firstItem="hKm-ui-yFe" firstAttribute="centerX" secondItem="bLh-k8-nPo" secondAttribute="centerX" id="Hvc-RR-eUL"/>
+                <constraint firstItem="6Zh-r2-pg0" firstAttribute="top" secondItem="MgN-hp-UPA" secondAttribute="bottom" constant="36" id="Jsh-37-WGf"/>
+                <constraint firstItem="6Zh-r2-pg0" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="MmV-a7-QbY"/>
+                <constraint firstItem="bLh-k8-nPo" firstAttribute="top" secondItem="hKm-ui-yFe" secondAttribute="bottom" constant="55" id="NqC-wM-MeB"/>
+                <constraint firstItem="6Zh-r2-pg0" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="aAQ-2a-4LS"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="MgN-hp-UPA" secondAttribute="trailing" constant="106" id="nnD-d6-nY9"/>
+            </constraints>
+            <point key="canvasLocation" x="11.594202898550726" y="98.4375"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="pause.circle.fill" catalog="system" width="128" height="121"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

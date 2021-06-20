@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="" id="gTV-IL-0wX" customClass="ProgramCell" customModule="PregFit" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="343" height="224"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="343" height="224"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Zmp-UO-xTR">
+                        <rect key="frame" x="0.0" y="0.0" width="343" height="224"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Dumbbell" translatesAutoresizingMaskIntoConstraints="NO" id="d0Y-Wr-XVy">
+                                <rect key="frame" x="0.0" y="0.0" width="343" height="224"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="55 Kcal" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="lis-SW-rKl">
+                                <rect key="frame" x="130" y="198" width="43" height="15"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=" 18 Minutes | " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="LXZ-J0-ImD">
+                                <rect key="frame" x="34" y="195" width="99" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="clock.arrow.circlepath" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="nTw-Ob-Gwn">
+                                <rect key="frame" x="16" y="197.5" width="16" height="14"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" systemColor="labelColor"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="flame" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="8QO-QX-pmY">
+                                <rect key="frame" x="111" y="197.5" width="16" height="14"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" systemColor="labelColor"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Dumbbell Workout" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="vdM-k1-Cdo">
+                                <rect key="frame" x="16" y="172" width="300" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="d0Y-Wr-XVy" firstAttribute="top" secondItem="Zmp-UO-xTR" secondAttribute="top" id="DB0-sQ-3Sj"/>
+                            <constraint firstAttribute="height" constant="224" id="Ful-zk-5sD"/>
+                            <constraint firstItem="d0Y-Wr-XVy" firstAttribute="leading" secondItem="Zmp-UO-xTR" secondAttribute="leading" id="Qk7-9k-dmO"/>
+                            <constraint firstAttribute="bottom" secondItem="d0Y-Wr-XVy" secondAttribute="bottom" id="eMJ-4F-R7B"/>
+                            <constraint firstAttribute="trailing" secondItem="d0Y-Wr-XVy" secondAttribute="trailing" id="mce-MO-IN5"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstItem="Zmp-UO-xTR" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="0FV-nF-es5"/>
+                <constraint firstItem="Zmp-UO-xTR" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="gmZ-9d-8ZP"/>
+                <constraint firstAttribute="trailing" secondItem="Zmp-UO-xTR" secondAttribute="trailing" id="wuT-VD-9F5"/>
+            </constraints>
+            <connections>
+                <outlet property="durationProgramLbl" destination="LXZ-J0-ImD" id="07h-ds-cUi"/>
+                <outlet property="imageProgram" destination="d0Y-Wr-XVy" id="TQc-qR-9xu"/>
+                <outlet property="kcalProgramLbl" destination="lis-SW-rKl" id="Y9X-qh-AFF"/>
+                <outlet property="nameProgramLbl" destination="vdM-k1-Cdo" id="hcx-1b-W8G"/>
+                <outlet property="viewProgramCell" destination="Zmp-UO-xTR" id="UxJ-wF-4FX"/>
+            </connections>
+            <point key="canvasLocation" x="-26.811594202898554" y="145.98214285714286"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="Dumbbell" width="351" height="232"/>
+        <image name="clock.arrow.circlepath" catalog="system" width="128" height="110"/>
+        <image name="flame" catalog="system" width="108" height="128"/>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

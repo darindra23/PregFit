@@ -5,13 +5,13 @@
 //  Created by Darindra R on 08/06/21.
 //
 
-import Foundation
+import UIKit
 
 struct PregFitData {
     static var programs: [Program] {
         get {
             return [
-                Program(name: "Dumbbell Workout Plan", duration: 8.0, kcal: 55, exercises: [
+                Program(name: "Dumbbell Workout Plan", duration: 8, kcal: 55, exercises: [
                     Exercise(exerciseName: "Dumbbell Goblet Squat",
                              requirements: ["Yoga Map", "Dumbbell 1 Kg"],
                              steps: ["Stand with your feet hip-width apart and hold a dumbbell in front of your chest, elbows pointing toward the floor.", "Push your hips back and bend your knees to lower into a squat. Lower the dumbbell to the floor at the same time. Push yourself back to start."],
@@ -49,8 +49,8 @@ struct PregFitData {
                              requirements: ["Yoga Map", "Dumbbell 1 Kg"],
                              steps: ["Hold a dumbbell in each hand with your palms facing in toward each other, keeping your knees bent slightly. Engage your core and maintain a straight spine as you hinge forward at the waist, bringing your torso almost parallel to the floor.", "Keep your upper arms in close to your body and your head in line with your spine, tucking your chin in slightly. On an exhale, engage your triceps by straightening your elbows.", "Hold your upper arms still, only moving your forearms during this movement. Pause here, then inhale to return the weights to the starting position."],
                              videoURL: "https://youtu.be/ShCYaoHmWmk"),
-                ]),
-                Program(name: "Relaxing Yoga Poses", duration: 12.0, kcal: 45, exercises: [
+                ], image: UIImage(named: "Dumbbell"), imageDetail: UIImage(named: "ProgramDumbbell")),
+                Program(name: "Relaxing Yoga Poses", duration: 12, kcal: 45, exercises: [
                     Exercise(exerciseName: "Easy Pose",
                              requirements: ["Yoga Map"],
                              steps: ["Begin seated and cross your legs in the way that is most comfortable for you with either the right or left leg in front.", "Sit up straight and feel length in your side body (waist)", "Lengthen your neck and allow your shoulders to move easily down and away from your ears by relaxing the trapezius muscles."],
@@ -96,7 +96,7 @@ struct PregFitData {
                              requirements: ["Yoga Map", "Pillow"],
                              steps: ["Sit on the ground come into Buddha konasana (butterfly pose) by bringing the bottoms of your feet together in front of you. Wrap your hands around your feet and sit tall for a few breaths.", "Once you settle into the pose, start to hinge forward at your hips to deepen the stretch."],
                              videoURL: "https://youtu.be/xPeL1FbJUpc"),
-                ]),
+                ], image: UIImage(named: "Yoga"), imageDetail: UIImage(named: "ProgramYoga")),
             ]
         }
     }
@@ -107,7 +107,8 @@ struct PregFitData {
             for program in programs {
                 listExercises.append(contentsOf: program.exercises)
             }
-            return listExercises
+
+            return listExercises.sorted { $0.exerciseName < $1.exerciseName }
         }
     }
 }
