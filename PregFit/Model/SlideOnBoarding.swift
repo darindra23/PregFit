@@ -1,14 +1,14 @@
 //
-//  OnBoardingSlide.swift
+//  SlideOnBoarding.swift
 //  PregFit
 //
-//  Created by Rizqi Ahmad Kurniawan on 15/06/21.
+//  Created by Peter Lee on 21/06/21.
 //
 
 import Foundation
 import UIKit
 
-struct OnBoardingSlide {
+struct SlideOnBoarding {
     var question: String
     var answer: String
     let iconImage: UIImage
