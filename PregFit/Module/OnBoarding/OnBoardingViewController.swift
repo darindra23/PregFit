@@ -12,7 +12,8 @@ class OnBoardingViewController: UIViewController {
     @IBOutlet weak var CollectionView: UICollectionView!
     @IBOutlet weak var PageControl: UIPageControl!
     @IBOutlet weak var AcceptButton: UIButton!
-
+    
+    let hKit = HealthKitModal()
     let onboardingCollectionViewCellId = "OnBoardingUICollectionViewCell"
 
     var slides: [SlideOnBoarding] = []
@@ -31,7 +32,7 @@ class OnBoardingViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        hKit.authorizeHealthKitInApp()
         CollectionView.delegate = self
         CollectionView.dataSource = self
         self.CollectionView.register(UINib(nibName: "OnBoardingUICollectionViewCell", bundle: nil), forCellWithReuseIdentifier: onboardingCollectionViewCellId)
