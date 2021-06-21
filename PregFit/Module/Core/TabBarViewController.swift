@@ -20,6 +20,7 @@ private extension TabBarViewController {
         tabBar.tintColor = .primaryBackground
         tabBar.unselectedItemTintColor = UIColor(hexString: "#DFDFDF")
         setViewControllers([programsTabBar(), exercisesTabBar()], animated: false)
+        
     }
 
     func programsTabBar() -> UINavigationController {

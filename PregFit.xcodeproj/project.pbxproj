@@ -3,17 +3,21 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		212B1D7A267214940096E0A8 /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 212B1D79267214930096E0A8 /* UIView.swift */; };
 		217BC24626731D76001D4A57 /* ReusableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 217BC24426731D76001D4A57 /* ReusableCell.swift */; };
 		217BC24726731D76001D4A57 /* ReusableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 217BC24526731D76001D4A57 /* ReusableCell.xib */; };
+		2183F97A26786B5000DE2C9A /* StartExerciseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2183F97826786B5000DE2C9A /* StartExerciseViewController.swift */; };
+		2183F97B26786B5000DE2C9A /* StartExerciseViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2183F97926786B5000DE2C9A /* StartExerciseViewController.xib */; };
 		2184B6F22671E2E9000C9C0B /* ProgramDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2184B6F02671E2E9000C9C0B /* ProgramDetailViewController.swift */; };
 		2184B6F32671E2E9000C9C0B /* ProgramDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2184B6F12671E2E9000C9C0B /* ProgramDetailViewController.xib */; };
+		218D9824267C69C6005F042D /* SuccessPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 218D9822267C69C6005F042D /* SuccessPageViewController.swift */; };
+		218D9825267C69C6005F042D /* SuccessPageViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 218D9823267C69C6005F042D /* SuccessPageViewController.xib */; };
 		2192421B267094F40077324F /* ProgramCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21924219267094F40077324F /* ProgramCell.swift */; };
 		2192421C267094F40077324F /* ProgramCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2192421A267094F40077324F /* ProgramCell.xib */; };
+		5BA23F72FD01EE4224A9BD9C /* Pods_PregFit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07701B2BD845DFE53F4EA267 /* Pods_PregFit.framework */; };
 		6E3AA172266FBBFC0071AC4D /* Program.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E3AA171266FBBFC0071AC4D /* Program.swift */; };
 		6E3AA174266FBC100071AC4D /* Exercise.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E3AA173266FBC100071AC4D /* Exercise.swift */; };
 		6E3AA176266FCCD20071AC4D /* PregFitData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E3AA175266FCCD20071AC4D /* PregFitData.swift */; };
@@ -33,16 +37,43 @@
 		6EA4BA0C266DE4A100295C31 /* ExercisesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EA4BA0A266DE4A100295C31 /* ExercisesViewController.swift */; };
 		6EA4BA0D266DE4A100295C31 /* Exercises.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6EA4BA0B266DE4A100295C31 /* Exercises.xib */; };
 		6EA4BA0F266DE92000295C31 /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EA4BA0E266DE92000295C31 /* UIColor.swift */; };
+		E72331202677FB4A0089D396 /* DetailTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E723311E2677FB4A0089D396 /* DetailTableViewCell.swift */; };
+		E72331212677FB4A0089D396 /* DetailTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E723311F2677FB4A0089D396 /* DetailTableViewCell.xib */; };
+		E723312326781E730089D396 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E723312226781E730089D396 /* TableViewCell.swift */; };
+		E7D38A59267C343C00FE9603 /* StepsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7D38A57267C343C00FE9603 /* StepsTableViewCell.swift */; };
+		E7D38A5A267C343C00FE9603 /* StepsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E7D38A58267C343C00FE9603 /* StepsTableViewCell.xib */; };
+		E7E6732C2679975D00F6B995 /* VideoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7E6732A2679975D00F6B995 /* VideoTableViewCell.swift */; };
+		E7E6732D2679975D00F6B995 /* VideoTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E7E6732B2679975D00F6B995 /* VideoTableViewCell.xib */; };
+		E7F5E69526770B5600267DAF /* ExerciseDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7F5E69326770B5600267DAF /* ExerciseDetailViewController.swift */; };
+		E7F5E69626770B5600267DAF /* ExerciseDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E7F5E69426770B5600267DAF /* ExerciseDetailViewController.xib */; };
+		741328EC2677322000911756 /* OnBoardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 741328EA2677322000911756 /* OnBoardingViewController.swift */; };
+		741328ED2677322000911756 /* OnBoardingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 741328EB2677322000911756 /* OnBoardingViewController.xib */; };
+		741328F026785E0200911756 /* OnBoardingUICollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 741328EE26785E0200911756 /* OnBoardingUICollectionViewCell.swift */; };
+		741328F126785E0200911756 /* OnBoardingUICollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 741328EF26785E0200911756 /* OnBoardingUICollectionViewCell.xib */; };
+		741328F32678690300911756 /* OnBoardingSlide.swift in Sources */ = {isa = PBXBuildFile; fileRef = 741328F22678690300911756 /* OnBoardingSlide.swift */; };
+		741328F52679C15A00911756 /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 741328F42679C15A00911756 /* UIView.swift */; };
+		B83A74C3266FD928006CA3B4 /* TimerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B83A74C1266FD928006CA3B4 /* TimerViewController.swift */; };
+		B83A74C4266FD928006CA3B4 /* TimerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B83A74C2266FD928006CA3B4 /* TimerViewController.xib */; };
+		B8963E3E267F148D00878ADA /* HealthKitModal.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8963E3D267F148D00878ADA /* HealthKitModal.swift */; };
+		B8963E42267F14A100878ADA /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B8963E41267F14A100878ADA /* HealthKit.framework */; };
+		B89FB8772671EA8900735475 /* PFTimerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B89FB8762671EA8900735475 /* PFTimerView.swift */; };
+		B89FB8792671EA9300735475 /* PFTimerView.xib in Resources */ = {isa = PBXBuildFile; fileRef = B89FB8782671EA9300735475 /* PFTimerView.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		07701B2BD845DFE53F4EA267 /* Pods_PregFit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PregFit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		212B1D79267214930096E0A8 /* UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
 		217BC24426731D76001D4A57 /* ReusableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReusableCell.swift; sourceTree = "<group>"; };
 		217BC24526731D76001D4A57 /* ReusableCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ReusableCell.xib; sourceTree = "<group>"; };
+		2183F97826786B5000DE2C9A /* StartExerciseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartExerciseViewController.swift; sourceTree = "<group>"; };
+		2183F97926786B5000DE2C9A /* StartExerciseViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StartExerciseViewController.xib; sourceTree = "<group>"; };
 		2184B6F02671E2E9000C9C0B /* ProgramDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgramDetailViewController.swift; sourceTree = "<group>"; };
 		2184B6F12671E2E9000C9C0B /* ProgramDetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProgramDetailViewController.xib; sourceTree = "<group>"; };
+		218D9822267C69C6005F042D /* SuccessPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuccessPageViewController.swift; sourceTree = "<group>"; };
+		218D9823267C69C6005F042D /* SuccessPageViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SuccessPageViewController.xib; sourceTree = "<group>"; };
 		21924219267094F40077324F /* ProgramCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgramCell.swift; sourceTree = "<group>"; };
 		2192421A267094F40077324F /* ProgramCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProgramCell.xib; sourceTree = "<group>"; };
+		613E4BF3FD302519CE7B0A49 /* Pods-PregFit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PregFit.release.xcconfig"; path = "Target Support Files/Pods-PregFit/Pods-PregFit.release.xcconfig"; sourceTree = "<group>"; };
 		6E3AA171266FBBFC0071AC4D /* Program.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Program.swift; sourceTree = "<group>"; };
 		6E3AA173266FBC100071AC4D /* Exercise.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Exercise.swift; sourceTree = "<group>"; };
 		6E3AA175266FCCD20071AC4D /* PregFitData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PregFitData.swift; sourceTree = "<group>"; };
@@ -64,6 +95,29 @@
 		6EA4BA0A266DE4A100295C31 /* ExercisesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExercisesViewController.swift; sourceTree = "<group>"; };
 		6EA4BA0B266DE4A100295C31 /* Exercises.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Exercises.xib; sourceTree = "<group>"; };
 		6EA4BA0E266DE92000295C31 /* UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
+		94B8E9B5FC98013BAC3E7C00 /* Pods-PregFit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PregFit.debug.xcconfig"; path = "Target Support Files/Pods-PregFit/Pods-PregFit.debug.xcconfig"; sourceTree = "<group>"; };
+		E723311E2677FB4A0089D396 /* DetailTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailTableViewCell.swift; sourceTree = "<group>"; };
+		E723311F2677FB4A0089D396 /* DetailTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailTableViewCell.xib; sourceTree = "<group>"; };
+		E723312226781E730089D396 /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
+		E7D38A57267C343C00FE9603 /* StepsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StepsTableViewCell.swift; sourceTree = "<group>"; };
+		E7D38A58267C343C00FE9603 /* StepsTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StepsTableViewCell.xib; sourceTree = "<group>"; };
+		E7E6732A2679975D00F6B995 /* VideoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoTableViewCell.swift; sourceTree = "<group>"; };
+		E7E6732B2679975D00F6B995 /* VideoTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = VideoTableViewCell.xib; sourceTree = "<group>"; };
+		E7F5E69326770B5600267DAF /* ExerciseDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseDetailViewController.swift; sourceTree = "<group>"; };
+		E7F5E69426770B5600267DAF /* ExerciseDetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ExerciseDetailViewController.xib; sourceTree = "<group>"; };
+		741328EA2677322000911756 /* OnBoardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnBoardingViewController.swift; sourceTree = "<group>"; };
+		741328EB2677322000911756 /* OnBoardingViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OnBoardingViewController.xib; sourceTree = "<group>"; };
+		741328EE26785E0200911756 /* OnBoardingUICollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnBoardingUICollectionViewCell.swift; sourceTree = "<group>"; };
+		741328EF26785E0200911756 /* OnBoardingUICollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OnBoardingUICollectionViewCell.xib; sourceTree = "<group>"; };
+		741328F22678690300911756 /* OnBoardingSlide.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnBoardingSlide.swift; sourceTree = "<group>"; };
+		741328F42679C15A00911756 /* UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
+		B83A74C1266FD928006CA3B4 /* TimerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerViewController.swift; sourceTree = "<group>"; };
+		B83A74C2266FD928006CA3B4 /* TimerViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TimerViewController.xib; sourceTree = "<group>"; };
+		B8963E3D267F148D00878ADA /* HealthKitModal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthKitModal.swift; sourceTree = "<group>"; };
+		B8963E3F267F14A100878ADA /* PregFit.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = PregFit.entitlements; sourceTree = "<group>"; };
+		B8963E41267F14A100878ADA /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = System/Library/Frameworks/HealthKit.framework; sourceTree = SDKROOT; };
+		B89FB8762671EA8900735475 /* PFTimerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PFTimerView.swift; sourceTree = "<group>"; };
+		B89FB8782671EA9300735475 /* PFTimerView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PFTimerView.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +125,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5BA23F72FD01EE4224A9BD9C /* Pods_PregFit.framework in Frameworks */,
+				B8963E42267F14A100878ADA /* HealthKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -86,6 +142,15 @@
 			path = "Cell Reusable";
 			sourceTree = "<group>";
 		};
+		2183F97726786B2900DE2C9A /* Start Exercise */ = {
+			isa = PBXGroup;
+			children = (
+				2183F97826786B5000DE2C9A /* StartExerciseViewController.swift */,
+				2183F97926786B5000DE2C9A /* StartExerciseViewController.xib */,
+			);
+			path = "Start Exercise";
+			sourceTree = "<group>";
+		};
 		2184B6EF2671D9A4000C9C0B /* Program Detail */ = {
 			isa = PBXGroup;
 			children = (
@@ -93,6 +158,15 @@
 				2184B6F12671E2E9000C9C0B /* ProgramDetailViewController.xib */,
 			);
 			path = "Program Detail";
+			sourceTree = "<group>";
+		};
+		218D9821267C6917005F042D /* Success Exercise */ = {
+			isa = PBXGroup;
+			children = (
+				218D9822267C69C6005F042D /* SuccessPageViewController.swift */,
+				218D9823267C69C6005F042D /* SuccessPageViewController.xib */,
+			);
+			path = "Success Exercise";
 			sourceTree = "<group>";
 		};
 		21924218267094860077324F /* Program Cell */ = {
@@ -119,6 +193,9 @@
 			children = (
 				6EA4B9E0266DDD5700295C31 /* PregFit */,
 				6EA4B9DF266DDD5700295C31 /* Products */,
+				72693AA19E42149BCE9EA13D /* Pods */,
+				A0D749FEE1AC3224432B6E54 /* Frameworks */,
+				B8963E40267F14A100878ADA /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -133,6 +210,7 @@
 		6EA4B9E0266DDD5700295C31 /* PregFit */ = {
 			isa = PBXGroup;
 			children = (
+				B8963E3F267F14A100878ADA /* PregFit.entitlements */,
 				6EA4B9F8266DDDD300295C31 /* App */,
 				6EA4B9F9266DDE3A00295C31 /* Extension */,
 				6EA4B9F2266DDD5800295C31 /* Info.plist */,
@@ -158,7 +236,7 @@
 			isa = PBXGroup;
 			children = (
 				6EA4BA0E266DE92000295C31 /* UIColor.swift */,
-				212B1D79267214930096E0A8 /* UIView.swift */,
+				741328F42679C15A00911756 /* UIView.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -174,7 +252,11 @@
 		6EA4B9FB266DDE5000295C31 /* Module */ = {
 			isa = PBXGroup;
 			children = (
+				E7D38A56267C340000FE9603 /* Cell Steps Reusable */,
+				E7F5E69226770B2E00267DAF /* Exercise Detail */,
+				741328E9267731E100911756 /* OnBoarding */,
 				217BC24126731CF5001D4A57 /* Cell Reusable */,
+				B83A74C0266FD910006CA3B4 /* Timer */,
 				6EA4BA05266DE44B00295C31 /* Exercises */,
 				6EA4BA04266DE44100295C31 /* Programs */,
 				6EA4BA02266DDFE700295C31 /* Core */,
@@ -214,6 +296,7 @@
 				6E3AA171266FBBFC0071AC4D /* Program.swift */,
 				6E3AA173266FBC100071AC4D /* Exercise.swift */,
 				6E3AA175266FCCD20071AC4D /* PregFitData.swift */,
+				B8963E3D267F148D00878ADA /* HealthKitModal.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -237,6 +320,8 @@
 		6EA4BA04266DE44100295C31 /* Programs */ = {
 			isa = PBXGroup;
 			children = (
+				218D9821267C6917005F042D /* Success Exercise */,
+				2183F97726786B2900DE2C9A /* Start Exercise */,
 				2184B6EF2671D9A4000C9C0B /* Program Detail */,
 				21924218267094860077324F /* Program Cell */,
 				6EA4BA06266DE47800295C31 /* ProgramsViewController.swift */,
@@ -255,6 +340,92 @@
 			path = Exercises;
 			sourceTree = "<group>";
 		};
+		72693AA19E42149BCE9EA13D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				94B8E9B5FC98013BAC3E7C00 /* Pods-PregFit.debug.xcconfig */,
+				613E4BF3FD302519CE7B0A49 /* Pods-PregFit.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		A0D749FEE1AC3224432B6E54 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				07701B2BD845DFE53F4EA267 /* Pods_PregFit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E723311D2677FB2C0089D396 /* Reusable Detail Cell */ = {
+			isa = PBXGroup;
+			children = (
+				E723311E2677FB4A0089D396 /* DetailTableViewCell.swift */,
+				E723311F2677FB4A0089D396 /* DetailTableViewCell.xib */,
+			);
+			path = "Reusable Detail Cell";
+			sourceTree = "<group>";
+		};
+		E7D38A56267C340000FE9603 /* Cell Steps Reusable */ = {
+			isa = PBXGroup;
+			children = (
+				E7D38A57267C343C00FE9603 /* StepsTableViewCell.swift */,
+				E7D38A58267C343C00FE9603 /* StepsTableViewCell.xib */,
+			);
+			path = "Cell Steps Reusable";
+			sourceTree = "<group>";
+		};
+		E7E673292679972300F6B995 /* Youtube Player */ = {
+			isa = PBXGroup;
+			children = (
+				E7E6732A2679975D00F6B995 /* VideoTableViewCell.swift */,
+				E7E6732B2679975D00F6B995 /* VideoTableViewCell.xib */,
+			);
+			path = "Youtube Player";
+			sourceTree = "<group>";
+		};
+		E7F5E69226770B2E00267DAF /* Exercise Detail */ = {
+			isa = PBXGroup;
+			children = (
+				E7E673292679972300F6B995 /* Youtube Player */,
+				E723311D2677FB2C0089D396 /* Reusable Detail Cell */,
+				E7F5E69326770B5600267DAF /* ExerciseDetailViewController.swift */,
+				E7F5E69426770B5600267DAF /* ExerciseDetailViewController.xib */,
+				E723312226781E730089D396 /* TableViewCell.swift */,
+			);
+			path = "Exercise Detail";
+			sourceTree = "<group>";
+		};
+		741328E9267731E100911756 /* OnBoarding */ = {
+			isa = PBXGroup;
+			children = (
+				741328EA2677322000911756 /* OnBoardingViewController.swift */,
+				741328EB2677322000911756 /* OnBoardingViewController.xib */,
+				741328EE26785E0200911756 /* OnBoardingUICollectionViewCell.swift */,
+				741328EF26785E0200911756 /* OnBoardingUICollectionViewCell.xib */,
+			);
+			path = OnBoarding;
+			sourceTree = "<group>";
+		};
+		B83A74C0266FD910006CA3B4 /* Timer */ = {
+			isa = PBXGroup;
+			children = (
+				B83A74C1266FD928006CA3B4 /* TimerViewController.swift */,
+				B83A74C2266FD928006CA3B4 /* TimerViewController.xib */,
+				B89FB8762671EA8900735475 /* PFTimerView.swift */,
+				B89FB8782671EA9300735475 /* PFTimerView.xib */,
+			);
+			path = Timer;
+			sourceTree = "<group>";
+		};
+		B8963E40267F14A100878ADA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B8963E41267F14A100878ADA /* HealthKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -262,9 +433,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6EA4B9F5266DDD5800295C31 /* Build configuration list for PBXNativeTarget "PregFit" */;
 			buildPhases = (
+				2987CFE739DCBF7AFC734D6E /* [CP] Check Pods Manifest.lock */,
 				6EA4B9DA266DDD5700295C31 /* Sources */,
 				6EA4B9DB266DDD5700295C31 /* Frameworks */,
 				6EA4B9DC266DDD5700295C31 /* Resources */,
+				AD170FD049B9BA9723B08C18 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -313,40 +486,106 @@
 			buildActionMask = 2147483647;
 			files = (
 				6EA4BA09266DE47800295C31 /* Programs.xib in Resources */,
+				E7D38A5A267C343C00FE9603 /* StepsTableViewCell.xib in Resources */,
+				741328ED2677322000911756 /* OnBoardingViewController.xib in Resources */,
 				6EA4B9F1266DDD5800295C31 /* LaunchScreen.storyboard in Resources */,
+				741328F126785E0200911756 /* OnBoardingUICollectionViewCell.xib in Resources */,
 				6E3AA19E2671CD8E0071AC4D /* ExercisesCell.xib in Resources */,
 				6EA4BA0D266DE4A100295C31 /* Exercises.xib in Resources */,
 				217BC24726731D76001D4A57 /* ReusableCell.xib in Resources */,
+				E7F5E69626770B5600267DAF /* ExerciseDetailViewController.xib in Resources */,
+				E72331212677FB4A0089D396 /* DetailTableViewCell.xib in Resources */,
+				E7E6732D2679975D00F6B995 /* VideoTableViewCell.xib in Resources */,
+				2183F97B26786B5000DE2C9A /* StartExerciseViewController.xib in Resources */,
+				B83A74C4266FD928006CA3B4 /* TimerViewController.xib in Resources */,
 				6EA4B9EE266DDD5800295C31 /* Assets.xcassets in Resources */,
+				B89FB8792671EA9300735475 /* PFTimerView.xib in Resources */,
 				2184B6F32671E2E9000C9C0B /* ProgramDetailViewController.xib in Resources */,
 				2192421C267094F40077324F /* ProgramCell.xib in Resources */,
+				218D9825267C69C6005F042D /* SuccessPageViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2987CFE739DCBF7AFC734D6E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PregFit-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AD170FD049B9BA9723B08C18 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PregFit/Pods-PregFit-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PregFit/Pods-PregFit-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-PregFit/Pods-PregFit-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		6EA4B9DA266DDD5700295C31 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				741328F026785E0200911756 /* OnBoardingUICollectionViewCell.swift in Sources */,
 				6E3AA1A02671D4E50071AC4D /* ExercisesViewModel.swift in Sources */,
 				6E3AA176266FCCD20071AC4D /* PregFitData.swift in Sources */,
+				741328F32678690300911756 /* OnBoardingSlide.swift in Sources */,
 				6EA4B9E6266DDD5700295C31 /* TabBarViewController.swift in Sources */,
+				E7E6732C2679975D00F6B995 /* VideoTableViewCell.swift in Sources */,
 				2192421B267094F40077324F /* ProgramCell.swift in Sources */,
+				2183F97A26786B5000DE2C9A /* StartExerciseViewController.swift in Sources */,
 				6EA4B9EC266DDD5700295C31 /* PregFit.xcdatamodeld in Sources */,
+				741328EC2677322000911756 /* OnBoardingViewController.swift in Sources */,
 				6E3AA172266FBBFC0071AC4D /* Program.swift in Sources */,
+				B83A74C3266FD928006CA3B4 /* TimerViewController.swift in Sources */,
 				6EA4BA0C266DE4A100295C31 /* ExercisesViewController.swift in Sources */,
 				6EA4B9E2266DDD5700295C31 /* AppDelegate.swift in Sources */,
 				217BC24626731D76001D4A57 /* ReusableCell.swift in Sources */,
 				6EA4BA00266DDF6100295C31 /* CoreDataManager.swift in Sources */,
+				741328F52679C15A00911756 /* UIView.swift in Sources */,
 				2184B6F22671E2E9000C9C0B /* ProgramDetailViewController.swift in Sources */,
+				B89FB8772671EA8900735475 /* PFTimerView.swift in Sources */,
 				6EA4BA0F266DE92000295C31 /* UIColor.swift in Sources */,
+				E723312326781E730089D396 /* TableViewCell.swift in Sources */,
 				212B1D7A267214940096E0A8 /* UIView.swift in Sources */,
+				218D9824267C69C6005F042D /* SuccessPageViewController.swift in Sources */,
 				6E3AA174266FBC100071AC4D /* Exercise.swift in Sources */,
 				6E3AA19D2671CD8E0071AC4D /* ExercisesCell.swift in Sources */,
 				6E3AA1A2267206EF0071AC4D /* SmartSearchMatcher.swift in Sources */,
+				B8963E3E267F148D00878ADA /* HealthKitModal.swift in Sources */,
 				6EA4B9E4266DDD5700295C31 /* SceneDelegate.swift in Sources */,
+				E7F5E69526770B5600267DAF /* ExerciseDetailViewController.swift in Sources */,
+				E72331202677FB4A0089D396 /* DetailTableViewCell.swift in Sources */,
+				E7D38A59267C343C00FE9603 /* StepsTableViewCell.swift in Sources */,
 				6EA4BA08266DE47800295C31 /* ProgramsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -483,11 +722,14 @@
 		};
 		6EA4B9F6266DDD5800295C31 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 94B8E9B5FC98013BAC3E7C00 /* Pods-PregFit.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = PregFit/PregFit.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = PregFit/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -504,11 +746,14 @@
 		};
 		6EA4B9F7266DDD5800295C31 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 613E4BF3FD302519CE7B0A49 /* Pods-PregFit.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = PregFit/PregFit.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = PregFit/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
 				LD_RUNPATH_SEARCH_PATHS = (
