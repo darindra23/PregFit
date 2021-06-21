@@ -58,16 +58,12 @@
                     <color key="textColor" red="0.69562852379999995" green="0.69563871619999995" blue="0.70968288180000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Skip" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bAa-fM-0Kw">
-                    <rect key="frame" x="20" y="668" width="350" height="21"/>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CdT-OQ-EVp">
+                    <rect key="frame" x="20" y="658" width="350" height="33"/>
                     <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
-                    <nil key="textColor"/>
-                    <nil key="highlightedColor"/>
-                </label>
-                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CdT-OQ-EVp">
-                    <rect key="frame" x="172" y="697" width="46" height="30"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <state key="normal" title="Button"/>
+                    <state key="normal" title="Skip">
+                        <color key="titleColor" systemColor="labelColor"/>
+                    </state>
                     <connections>
                         <action selector="skipExercise:" destination="-1" eventType="touchUpInside" id="Gmn-KQ-Rgq"/>
                     </connections>
@@ -77,9 +73,7 @@
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
             <constraints>
                 <constraint firstItem="5IX-87-lIY" firstAttribute="top" secondItem="uJE-aG-qCX" secondAttribute="bottom" constant="8" id="5jY-4l-O1d"/>
-                <constraint firstItem="bAa-fM-0Kw" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="5mq-gT-7WK"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="1kp-kB-V6t" secondAttribute="trailing" constant="150" id="6QS-sA-9lA"/>
-                <constraint firstItem="bAa-fM-0Kw" firstAttribute="top" secondItem="syh-Ac-snp" secondAttribute="bottom" constant="10" id="6Ro-ml-oCy"/>
                 <constraint firstItem="1kp-kB-V6t" firstAttribute="top" secondItem="5IX-87-lIY" secondAttribute="bottom" constant="16" id="7Wq-ui-VXh"/>
                 <constraint firstItem="syh-Ac-snp" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="8r6-S0-Y2L"/>
                 <constraint firstItem="uJE-aG-qCX" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="96Z-NY-ymG"/>
@@ -87,12 +81,14 @@
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="5IX-87-lIY" secondAttribute="trailing" constant="20" id="DYk-lV-0qy"/>
                 <constraint firstItem="uJE-aG-qCX" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="H0Q-aG-ceG"/>
                 <constraint firstItem="syh-Ac-snp" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="PwE-xr-L9N"/>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="bAa-fM-0Kw" secondAttribute="trailing" constant="20" id="dup-bi-v7H"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="CdT-OQ-EVp" secondAttribute="trailing" constant="20" id="clX-V8-Pco"/>
+                <constraint firstItem="CdT-OQ-EVp" firstAttribute="top" secondItem="syh-Ac-snp" secondAttribute="bottom" id="fRj-tS-xvz"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="uJE-aG-qCX" secondAttribute="trailing" constant="20" id="nrM-QQ-MVf"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="xrZ-Li-bui" secondAttribute="trailing" constant="20" id="nuk-I3-ZV3"/>
                 <constraint firstItem="1kp-kB-V6t" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="22" id="p1K-Wv-aWM"/>
                 <constraint firstItem="xrZ-Li-bui" firstAttribute="top" secondItem="5IX-87-lIY" secondAttribute="bottom" constant="22" id="taT-er-NMZ"/>
                 <constraint firstItem="syh-Ac-snp" firstAttribute="top" secondItem="1kp-kB-V6t" secondAttribute="bottom" constant="10" id="xJa-EM-MkA"/>
+                <constraint firstItem="CdT-OQ-EVp" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="ydw-24-RDD"/>
             </constraints>
             <point key="canvasLocation" x="137.68115942028987" y="145.98214285714286"/>
         </view>
@@ -100,6 +96,9 @@
     <resources>
         <image name="Ankle to Knee Pose" width="811" height="541.66668701171875"/>
         <image name="info.circle" catalog="system" width="128" height="121"/>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

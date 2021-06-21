@@ -15,7 +15,12 @@ class SuccessPageViewController: UIViewController {
         super.viewDidLoad()
         setup()
     }
-
+    
+    @IBAction func finishButton(_ sender: Any) {
+        let vc = ProgramsViewController(nibName: "Programs", bundle: nil)
+        navigationController?.pushViewController(vc, animated: true)
+    }
+    
 }
 
 fileprivate extension SuccessPageViewController {
