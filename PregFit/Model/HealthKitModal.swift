@@ -136,18 +136,18 @@ class HealthKitModal {
         controller.present(alert, animated: true, completion: nil)
     }
     
-    func showAlert(){
-        let instructions = "Your Heart Rate exceeded 140 BPM. Consider toning down or taking a momentary break."
-        let alert = UIAlertController(title: "WARNING!", message: instructions, preferredStyle: .alert)
-        alert.addAction(UIAlertAction(title: "Okay", style: .default))
-        UIApplication.topViewController()?.present(alert, animated: false, completion: nil)
-        //        present(alert, animated: true)
-        //        DispatchQueue.main.async {
-        //            alert.present(TabBarViewController(), animated: true, completion: nil)
-        //            UIViewController().present(alert, animated: true, completion: nil)
-        //        }
-        //        alert.present(alert, animated: true)
-    }
+//    func showAlert(){
+//        let instructions = "Your Heart Rate exceeded 140 BPM. Consider toning down or taking a momentary break."
+//        let alert = UIAlertController(title: "WARNING!", message: instructions, preferredStyle: .alert)
+//        alert.addAction(UIAlertAction(title: "Okay", style: .default))
+//        UIApplication.topViewController()?.present(alert, animated: false, completion: nil)
+//        //        present(alert, animated: true)
+//        //        DispatchQueue.main.async {
+//        //            alert.present(TabBarViewController(), animated: true, completion: nil)
+//        //            UIViewController().present(alert, animated: true, completion: nil)
+//        //        }
+//        //        alert.present(alert, animated: true)
+//    }
     
 }
 
