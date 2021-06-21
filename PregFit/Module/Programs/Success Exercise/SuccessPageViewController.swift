@@ -17,9 +17,7 @@ class SuccessPageViewController: UIViewController {
     }
     
     @IBAction func finishButton(_ sender: Any) {
-        let vc = ProgramsViewController(nibName: "Programs", bundle: nil)
-        navigationController?.pushViewController(vc, animated: true)
-    }
+        navigationController?.popToRootViewController(animated: true)    }
     
 }
 
