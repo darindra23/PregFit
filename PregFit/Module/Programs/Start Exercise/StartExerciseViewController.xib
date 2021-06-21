@@ -11,6 +11,7 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="StartExerciseViewController" customModule="PregFit" customModuleProvider="target">
             <connections>
                 <outlet property="imageStartExercise" destination="5IX-87-lIY" id="xQD-Uw-M8h"/>
+                <outlet property="pageIndex" destination="uJE-aG-qCX" id="JSy-Bo-SeK"/>
                 <outlet property="timerUiView" destination="syh-Ac-snp" id="gwy-Yv-ota"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
@@ -63,6 +64,14 @@
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
                 </label>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CdT-OQ-EVp">
+                    <rect key="frame" x="172" y="697" width="46" height="30"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <state key="normal" title="Button"/>
+                    <connections>
+                        <action selector="skipExercise:" destination="-1" eventType="touchUpInside" id="Gmn-KQ-Rgq"/>
+                    </connections>
+                </button>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>

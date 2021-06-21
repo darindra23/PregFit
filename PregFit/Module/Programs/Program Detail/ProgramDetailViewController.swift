@@ -24,6 +24,12 @@ class ProgramDetailViewController: UIViewController {
         super.viewDidLoad()
         setup()
     }
+    @IBAction func startExercise(_ sender: Any) {
+        let vc = StartExerciseViewController(nibName: "StartExerciseViewController", bundle: nil)
+        vc.program = program
+
+        navigationController?.pushViewController(vc, animated: true)
+    }
 }
 
 fileprivate extension ProgramDetailViewController {

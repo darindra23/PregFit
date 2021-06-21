@@ -56,6 +56,9 @@
                     <userDefinedRuntimeAttributes>
                         <userDefinedRuntimeAttribute type="string" keyPath="layer.cornerRadius" value="10"/>
                     </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="startExercise:" destination="-1" eventType="touchUpInside" id="7ta-0i-eN3"/>
+                    </connections>
                 </button>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=" 18 Minutes | " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fIO-jj-hKA">
                     <rect key="frame" x="55" y="370" width="75" height="15"/>

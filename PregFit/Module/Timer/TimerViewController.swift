@@ -8,28 +8,39 @@
 import UIKit
 
 class TimerViewController: UIViewController {
-    
+
     @IBOutlet weak var timerView: PFTimerView!
-    
+
     @IBOutlet weak var skipButton: UIButton!
-    
+
     @IBOutlet weak var pauseButton: UIButton!
+
     var resumeTapped = false
+    var program: Program?
+    var index: Int?
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
         title = ""
         navigationController?.navigationBar.barTintColor = UIColor(hexString: "#D4A95F")
-        
+
         // kalo buat buat break
         timerView.countdownTimer()
     }
-    
+
     @IBAction func skipAction(_ sender: UIButton) {
-//        navigationController?.pushViewController(ExercisesViewController(), animated: true)
+        if program?.exercises.count == index {
+//            navigationController?.pushViewController(<#T##viewController: UIViewController##UIViewController#>, animated: <#T##Bool#>)
+        } else {
+            let vc = StartExerciseViewController(nibName: "StartExerciseViewController", bundle: nil)
+            vc.program = program
+            vc.index = index! + 1
+
+            navigationController?.pushViewController(vc, animated: true)
+        }
     }
-    
+
     @IBAction func pauseAction(_ sender: UIButton) {
         if self.resumeTapped == false {
             sender.setImage(UIImage.init(systemName: "play.circle.fill"), for: .normal)
@@ -43,7 +54,7 @@ class TimerViewController: UIViewController {
             timerView.displayLink.isPaused = false
         }
     }
-    
-    
-    
+
+
+
 }
