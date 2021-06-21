@@ -29,6 +29,9 @@ class ReusableCell: UITableViewCell {
             }
         }
     }
+    
+    var isRequirements: Bool?
+    
 
     override func awakeFromNib() {
         super.awakeFromNib()

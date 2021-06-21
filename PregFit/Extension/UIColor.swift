@@ -38,4 +38,7 @@ extension UIColor {
             return UIColor(hexString: "#D4A95F")
         }
     }
+    
+    static let borderTintPrimaryColor = UIColor(hexString: "#CCCCCC").cgColor
+
 }

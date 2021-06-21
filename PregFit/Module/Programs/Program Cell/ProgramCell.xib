@@ -55,6 +55,7 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="d0Y-Wr-XVy" firstAttribute="top" secondItem="Zmp-UO-xTR" secondAttribute="top" id="DB0-sQ-3Sj"/>
+                            <constraint firstAttribute="height" constant="224" id="Ful-zk-5sD"/>
                             <constraint firstItem="d0Y-Wr-XVy" firstAttribute="leading" secondItem="Zmp-UO-xTR" secondAttribute="leading" id="Qk7-9k-dmO"/>
                             <constraint firstAttribute="bottom" secondItem="d0Y-Wr-XVy" secondAttribute="bottom" id="eMJ-4F-R7B"/>
                             <constraint firstAttribute="trailing" secondItem="d0Y-Wr-XVy" secondAttribute="trailing" id="mce-MO-IN5"/>
@@ -66,7 +67,6 @@
             <constraints>
                 <constraint firstItem="Zmp-UO-xTR" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="0FV-nF-es5"/>
                 <constraint firstItem="Zmp-UO-xTR" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="gmZ-9d-8ZP"/>
-                <constraint firstAttribute="bottom" secondItem="Zmp-UO-xTR" secondAttribute="bottom" id="rfa-xy-fkJ"/>
                 <constraint firstAttribute="trailing" secondItem="Zmp-UO-xTR" secondAttribute="trailing" id="wuT-VD-9F5"/>
             </constraints>
             <connections>
@@ -74,6 +74,7 @@
                 <outlet property="imageProgram" destination="d0Y-Wr-XVy" id="TQc-qR-9xu"/>
                 <outlet property="kcalProgramLbl" destination="lis-SW-rKl" id="Y9X-qh-AFF"/>
                 <outlet property="nameProgramLbl" destination="vdM-k1-Cdo" id="hcx-1b-W8G"/>
+                <outlet property="viewProgramCell" destination="Zmp-UO-xTR" id="UxJ-wF-4FX"/>
             </connections>
             <point key="canvasLocation" x="-26.811594202898554" y="145.98214285714286"/>
         </collectionViewCell>
