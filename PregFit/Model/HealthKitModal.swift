@@ -16,10 +16,11 @@ class HealthKitModal {
     var rate : [Double] = []
     var time : [Int] = []
     var detik = 0
+    var currentHR: Int?
     
     func authorizeHealthKitInApp() {
         let healthKitTypesToRead : Set<HKObjectType> = [HKObjectType.quantityType(forIdentifier: .heartRate)!]
-        let healthKitTypesToWrite : Set<HKSampleType> = []
+        let healthKitTypesToWrite : Set<HKSampleType> = [HKObjectType.quantityType(forIdentifier: .heartRate)!]
         if !HKHealthStore.isHealthDataAvailable() {
             print("Error occured")
             return
@@ -70,8 +71,9 @@ class HealthKitModal {
                 self.rate.append(heartRate)
                 self.time.append(self.detik)
                 self.detik+=1
-                print(heartRate)
-                
+//                print(heartRate)
+                self.currentHR = Int(heartRate)
+                print(self.currentHR ?? Int())
                 if heartRate >= 140 {
                     NotificationManager.shared.scheduleNotificationForReminderTask()
 //                    self.showAlert()

@@ -8,8 +8,14 @@
 import UIKit
 
 class SuccessPageViewController: UIViewController {
+    
 
     @IBOutlet weak var buttonFinish: UIButton!
+    @IBOutlet weak var lastBPMLbl: UILabel!
+    
+    var hr: Int?
+//    var currentHR: Int?
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -25,8 +31,16 @@ class SuccessPageViewController: UIViewController {
 
 fileprivate extension SuccessPageViewController {
     func setup() {
+        lastBPMLbl.text = "Current BPM \(hr ?? Int())"
+        print("BPM \(hr ?? Int())")
         
+//        if let hr = hKit.currentHR {
+//            print("BPM \(hr ?? Int())")
+//        }
+//        hKit.startMockHeartData()
+//        hKit.stopMockHeartData()
         buttonFinish.dropShadow()
+
 
     }
 }
