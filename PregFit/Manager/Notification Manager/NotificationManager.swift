@@ -32,7 +32,7 @@ class NotificationManager: NSObject, UNUserNotificationCenterDelegate{
         //        let date = Date()
         //        let triggerDate = Calendar.current.dateComponents([.day], from: date)
         //        let trigger = UNCalendarNotificationTrigger(dateMatching: triggerDate, repeats: true)
-        let trigger = UNTimeIntervalNotificationTrigger(timeInterval: 0, repeats: false)
+        let trigger = UNTimeIntervalNotificationTrigger(timeInterval: 0.1, repeats: false)
         let identifier = "Reminder Task"
         let request = UNNotificationRequest(identifier: identifier, content: content, trigger: trigger)
         
