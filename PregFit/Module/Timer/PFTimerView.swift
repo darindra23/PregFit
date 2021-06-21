@@ -6,6 +6,9 @@
 //
 
 import UIKit
+protocol PFTimerViewProtocol {
+    func didEndTimer()
+}
 
 class PFTimerView: UIView {
     
@@ -15,12 +18,14 @@ class PFTimerView: UIView {
     lazy var prepareDL = CADisplayLink(target: self, selector: #selector(runPreparation))
     let basicAnimation = CABasicAnimation(keyPath: "strokeEnd")
     
+    var delegate: PFTimerViewProtocol?
+    
 //    var timerCountdown = Timer()
-    var durationInSecond = 31
-    var durationPreparation = 4
+    var durationInSecond: Int?
+    var durationPreparation: Int?
     
     var program: Program?
-    var index: Int = 0
+    var index: Int?
     
     @IBOutlet weak var preparationLabel: UILabel!
     @IBOutlet weak var preparationTimerLabel: UILabel!
@@ -43,6 +48,8 @@ class PFTimerView: UIView {
         content.frame = self.bounds
         content.autoresizingMask = [.flexibleHeight, .flexibleWidth]
         TimerLabel.isHidden = true
+        durationInSecond = 31
+        durationPreparation = 4
         addSubview(content)
     }
     
@@ -82,7 +89,7 @@ class PFTimerView: UIView {
     }
     
     func setUpDurationAnimation()  {
-        basicAnimation.duration =  CFTimeInterval(durationInSecond + Int((1)) * (durationInSecond / 5))
+        basicAnimation.duration =  CFTimeInterval(durationInSecond! + Int((1)) * (durationInSecond! / 5))
     }
     
     func pauseAnimationProgressBar() {
@@ -104,27 +111,28 @@ class PFTimerView: UIView {
     
     // countdown
     @objc func runCountdown() {
-        durationInSecond -= 1
-        TimerLabel.text = "\(durationInSecond)"
+        durationInSecond! -= 1
+        TimerLabel.text = "\(durationInSecond!)"
         
         
-        if self.durationInSecond <= 0 {
+        if self.durationInSecond! <= 0 {
             displayLink.invalidate()
             displayLink.remove(from: .current, forMode: .common)
             // disini darrr
             // -> Kalo timer ini habis ke 2 page
             // 1. Start View Controller
             // 2. Timer View Controller
+            delegate?.didEndTimer()
         }
     }
     
     // preparation
     @objc func runPreparation() {
         TimerLabel.text = ""
-        durationPreparation -= 1
-        preparationLabel.text = "\(durationPreparation)"
+        durationPreparation! -= 1
+        preparationLabel.text = "\(durationPreparation!)"
         
-        if durationPreparation <= 0 {
+        if durationPreparation! <= 0 {
             preparationTimerLabel.isHidden = true
             preparationLabel.isHidden = true
             prepareDL.remove(from: .current, forMode: .common)
@@ -137,7 +145,7 @@ class PFTimerView: UIView {
         prepareDL.preferredFramesPerSecond = 1
         prepareDL.add(to: .current, forMode: .common)
         
-        preparationLabel.text = "\(durationPreparation)"
+        preparationLabel.text = "\(durationPreparation!)"
     }
     
     func countdownTimer() {

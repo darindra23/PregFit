@@ -11,6 +11,7 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SuccessPageViewController" customModule="PregFit" customModuleProvider="target">
             <connections>
                 <outlet property="buttonFinish" destination="qXS-wb-Pwl" id="QGS-DA-gX3"/>
+                <outlet property="lastBPMLbl" destination="Oet-AT-6lp" id="6QO-LL-fPc"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -84,6 +85,14 @@
             </constraints>
             <point key="canvasLocation" x="139" y="146"/>
         </view>
+        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="2i7-EP-qcC">
+            <rect key="frame" x="0.0" y="0.0" width="42" height="21"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+            <nil key="textColor"/>
+            <nil key="highlightedColor"/>
+            <point key="canvasLocation" x="667" y="111"/>
+        </label>
     </objects>
     <resources>
         <image name="heart.circle" catalog="system" width="128" height="121"/>

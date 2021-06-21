@@ -27,6 +27,7 @@ class TimerViewController: UIViewController {
 
         // kalo buat buat break
         timerView.countdownTimer()
+        timerView.delegate = self
     }
 
     @IBAction func skipAction(_ sender: UIButton) {
@@ -57,4 +58,18 @@ class TimerViewController: UIViewController {
 
 
 
+}
+
+extension TimerViewController: PFTimerViewProtocol{
+    func didEndTimer() {
+        if program?.exercises.count == index {
+//            navigationController?.pushViewController(<#T##viewController: UIViewController##UIViewController#>, animated: <#T##Bool#>)
+        } else {
+            let vc = StartExerciseViewController(nibName: "StartExerciseViewController", bundle: nil)
+            vc.program = program
+            vc.index = index! + 1
+
+            navigationController?.pushViewController(vc, animated: true)
+        }
+    }
 }

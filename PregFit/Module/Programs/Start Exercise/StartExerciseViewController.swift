@@ -31,14 +31,16 @@ class StartExerciseViewController: UIViewController {
         pageIndex.text = "\(index + 1)/\(program.exercises.count)"
         imageStartExercise.image = UIImage(named: "\(program.exercises[index].exerciseName)"); imageStartExercise.layer.borderWidth = 1
         self.imageStartExercise.layer.borderColor = UIColor.borderTintPrimaryColor
+        hKit.startMockHeartData()
         timerUiView.preparationTimer()
-       // hKit.startMockHeartData()
+        timerUiView.delegate = self
     }
 
     @IBAction func skipExercise(_ sender: Any) {
         
         if index + 1 == program?.exercises.count{
             let successExerciseVC = SuccessPageViewController(nibName: "SuccessPageViewController", bundle: nil)
+            successExerciseVC.hr = hKit.currentHR
             navigationController?.pushViewController(successExerciseVC, animated: true)
         }else{
             let vc = TimerViewController(nibName: "TimerViewController", bundle: nil)
@@ -50,4 +52,22 @@ class StartExerciseViewController: UIViewController {
         
     }
 
+}
+
+extension StartExerciseViewController: PFTimerViewProtocol {
+    func didEndTimer() {
+        if index + 1 == program?.exercises.count{
+            let successExerciseVC = SuccessPageViewController(nibName: "SuccessPageViewController", bundle: nil)
+            successExerciseVC.hr = hKit.currentHR
+            navigationController?.pushViewController(successExerciseVC, animated: true)
+        }else{
+            let vc = TimerViewController(nibName: "TimerViewController", bundle: nil)
+            vc.program = program
+            vc.index = index
+
+            navigationController?.pushViewController(vc, animated: true)
+        }
+    }
+    
+    
 }
