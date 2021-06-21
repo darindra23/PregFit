@@ -32,15 +32,22 @@ class StartExerciseViewController: UIViewController {
         imageStartExercise.image = UIImage(named: "\(program.exercises[index].exerciseName)"); imageStartExercise.layer.borderWidth = 1
         self.imageStartExercise.layer.borderColor = UIColor.borderTintPrimaryColor
         timerUiView.preparationTimer()
-        hKit.startMockHeartData()
+       // hKit.startMockHeartData()
     }
 
     @IBAction func skipExercise(_ sender: Any) {
-        let vc = TimerViewController(nibName: "TimerViewController", bundle: nil)
-        vc.program = program
-        vc.index = index
+        
+        if index + 1 == program?.exercises.count{
+            let successExerciseVC = SuccessPageViewController(nibName: "SuccessPageViewController", bundle: nil)
+            navigationController?.pushViewController(successExerciseVC, animated: true)
+        }else{
+            let vc = TimerViewController(nibName: "TimerViewController", bundle: nil)
+            vc.program = program
+            vc.index = index
 
-        navigationController?.pushViewController(vc, animated: true)
+            navigationController?.pushViewController(vc, animated: true)
+        }
+        
     }
 
 }
