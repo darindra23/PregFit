@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		217BC24626731D76001D4A57 /* ReusableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 217BC24426731D76001D4A57 /* ReusableCell.swift */; };
 		217BC24726731D76001D4A57 /* ReusableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 217BC24526731D76001D4A57 /* ReusableCell.xib */; };
+		217FDABD26804BC900F299F6 /* NotificationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 217FDABC26804BC900F299F6 /* NotificationManager.swift */; };
 		2183F97A26786B5000DE2C9A /* StartExerciseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2183F97826786B5000DE2C9A /* StartExerciseViewController.swift */; };
 		2183F97B26786B5000DE2C9A /* StartExerciseViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2183F97926786B5000DE2C9A /* StartExerciseViewController.xib */; };
 		2184B6F22671E2E9000C9C0B /* ProgramDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2184B6F02671E2E9000C9C0B /* ProgramDetailViewController.swift */; };
@@ -53,6 +54,7 @@
 /* Begin PBXFileReference section */
 		217BC24426731D76001D4A57 /* ReusableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReusableCell.swift; sourceTree = "<group>"; };
 		217BC24526731D76001D4A57 /* ReusableCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ReusableCell.xib; sourceTree = "<group>"; };
+		217FDABC26804BC900F299F6 /* NotificationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationManager.swift; sourceTree = "<group>"; };
 		2183F97826786B5000DE2C9A /* StartExerciseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartExerciseViewController.swift; sourceTree = "<group>"; };
 		2183F97926786B5000DE2C9A /* StartExerciseViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StartExerciseViewController.xib; sourceTree = "<group>"; };
 		2184B6F02671E2E9000C9C0B /* ProgramDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgramDetailViewController.swift; sourceTree = "<group>"; };
@@ -118,6 +120,22 @@
 			path = "Cell Reusable";
 			sourceTree = "<group>";
 		};
+		217FDABA26804B4F00F299F6 /* Recovered References */ = {
+			isa = PBXGroup;
+			children = (
+				741328F22678690300911756 /* OnBoardingSlide.swift */,
+			);
+			name = "Recovered References";
+			sourceTree = "<group>";
+		};
+		217FDABB26804BA800F299F6 /* Notification Manager */ = {
+			isa = PBXGroup;
+			children = (
+				217FDABC26804BC900F299F6 /* NotificationManager.swift */,
+			);
+			path = "Notification Manager";
+			sourceTree = "<group>";
+		};
 		2183F97726786B2900DE2C9A /* Start Exercise */ = {
 			isa = PBXGroup;
 			children = (
@@ -170,6 +188,7 @@
 				6EA4B9E0266DDD5700295C31 /* PregFit */,
 				6EA4B9DF266DDD5700295C31 /* Products */,
 				B8963E40267F14A100878ADA /* Frameworks */,
+				217FDABA26804B4F00F299F6 /* Recovered References */,
 			);
 			sourceTree = "<group>";
 		};
@@ -218,6 +237,7 @@
 		6EA4B9FA266DDE4A00295C31 /* Manager */ = {
 			isa = PBXGroup;
 			children = (
+				217FDABB26804BA800F299F6 /* Notification Manager */,
 				6EA4B9FE266DDF1500295C31 /* Core Data Manager */,
 			);
 			path = Manager;
@@ -439,6 +459,7 @@
 				217BC24626731D76001D4A57 /* ReusableCell.swift in Sources */,
 				6EA4BA00266DDF6100295C31 /* CoreDataManager.swift in Sources */,
 				741328F52679C15A00911756 /* UIView.swift in Sources */,
+				217FDABD26804BC900F299F6 /* NotificationManager.swift in Sources */,
 				2184B6F22671E2E9000C9C0B /* ProgramDetailViewController.swift in Sources */,
 				B89FB8772671EA8900735475 /* PFTimerView.swift in Sources */,
 				6EA4BA0F266DE92000295C31 /* UIColor.swift in Sources */,
