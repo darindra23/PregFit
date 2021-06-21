@@ -11,6 +11,8 @@ class StartExerciseViewController: UIViewController {
 
     @IBOutlet weak var imageStartExercise: UIImageView!
     @IBOutlet weak var timerUiView: PFTimerView!
+    let hKit = HealthKitModal()
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -21,6 +23,7 @@ class StartExerciseViewController: UIViewController {
         imageStartExercise.layer.borderWidth = 1
         self.imageStartExercise.layer.borderColor = UIColor.borderTintPrimaryColor
         timerUiView.preparationTimer()
+        hKit.startMockHeartData()
     }
     
 
