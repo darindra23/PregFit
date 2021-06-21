@@ -19,6 +19,9 @@ class PFTimerView: UIView {
     var durationInSecond = 31
     var durationPreparation = 4
     
+    var program: Program?
+    var index: Int = 0
+    
     @IBOutlet weak var preparationLabel: UILabel!
     @IBOutlet weak var preparationTimerLabel: UILabel!
     @IBOutlet weak var TimerLabel: UILabel!
@@ -105,9 +108,13 @@ class PFTimerView: UIView {
         TimerLabel.text = "\(durationInSecond)"
         
         
-        if durationInSecond <= 0 {
+        if self.durationInSecond <= 0 {
             displayLink.invalidate()
             displayLink.remove(from: .current, forMode: .common)
+            // disini darrr
+            // -> Kalo timer ini habis ke 2 page
+            // 1. Start View Controller
+            // 2. Timer View Controller
         }
     }
     
