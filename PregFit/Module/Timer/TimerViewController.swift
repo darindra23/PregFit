@@ -22,11 +22,8 @@ class TimerViewController: UIViewController {
         title = ""
         navigationController?.navigationBar.barTintColor = UIColor(hexString: "#D4A95F")
         
-        // preparation
-        timerView.preparationTimer()
-        
         // kalo buat buat break
-//        timerView.countdownTimer()
+        timerView.countdownTimer()
     }
     
     @IBAction func skipAction(_ sender: UIButton) {
