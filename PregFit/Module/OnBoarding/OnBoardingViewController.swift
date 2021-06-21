@@ -15,7 +15,7 @@ class OnBoardingViewController: UIViewController {
 
     let onboardingCollectionViewCellId = "OnBoardingUICollectionViewCell"
 
-    var slides: [OnBoardingSlide] = []
+    var slides: [SlideOnBoarding] = []
     var currentPage = 0 {
         didSet {
             if currentPage == slides.count - 1 {
@@ -38,9 +38,9 @@ class OnBoardingViewController: UIViewController {
         AcceptButton.isHidden = true
 
         slides = [
-            OnBoardingSlide(question: "What medical complications should stop you from exercising?", answer: "Heart and lung diseases, Diabetes, Anemia, Placenta previa, Preeclampsia", iconImage: UIImage(systemName: "exclamationmark.circle.fill") ?? UIImage(), accessoryImage: #imageLiteral(resourceName: "Onboarding")),
-            OnBoardingSlide(question: "When should you stop exercising?", answer: "Fleck or Bleeding, Pain on your belly, or Bodily fatigue", iconImage: UIImage(systemName: "hand.raised.slash.fill") ?? UIImage(), accessoryImage: #imageLiteral(resourceName: "Onboarding")),
-            OnBoardingSlide(question: "What do you need to prepare before exercising?", answer: "Wear an Apple Watch, Use sport clothing, Prepare required equipments, and being pregnant", iconImage: UIImage(systemName: "headphones.circle.fill") ?? UIImage(), accessoryImage: #imageLiteral(resourceName: "Onboarding"))
+            SlideOnBoarding(question: "What medical complications should stop you from exercising?", answer: "Heart and lung diseases, Diabetes, Anemia, Placenta previa, Preeclampsia", iconImage: UIImage(systemName: "exclamationmark.circle.fill") ?? UIImage(), accessoryImage: #imageLiteral(resourceName: "Onboarding")),
+            SlideOnBoarding(question: "When should you stop exercising?", answer: "Fleck or Bleeding, Pain on your belly, or Bodily fatigue", iconImage: UIImage(systemName: "hand.raised.slash.fill") ?? UIImage(), accessoryImage: #imageLiteral(resourceName: "Onboarding")),
+            SlideOnBoarding(question: "What do you need to prepare before exercising?", answer: "Wear an Apple Watch, Use sport clothing, Prepare required equipments, and being pregnant", iconImage: UIImage(systemName: "headphones.circle.fill") ?? UIImage(), accessoryImage: #imageLiteral(resourceName: "Onboarding"))
         ]
     }
 

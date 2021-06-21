@@ -19,7 +19,13 @@ class OnBoardingUICollectionViewCell: UICollectionViewCell {
         super.awakeFromNib()
         // Initialization code
     }
-    func setup(_ slide: OnBoardingSlide) {
+//    func setup(_ slide: OnBoarding) {
+//        AccesoryImageView.image = slide.accessoryImage
+//        IconImagaView.image = slide.iconImage
+//        QuestionLabel.text = slide.question
+//        AnswerLabel.text = slide.answer
+//    }
+    func setup(_ slide: SlideOnBoarding){
         AccesoryImageView.image = slide.accessoryImage
         IconImagaView.image = slide.iconImage
         QuestionLabel.text = slide.question

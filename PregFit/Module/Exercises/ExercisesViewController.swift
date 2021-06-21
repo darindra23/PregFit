@@ -45,6 +45,18 @@ extension ExercisesViewController: UITableViewDataSource, UITableViewDelegate {
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         120
     }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let vc = ExerciseDetailViewController(nibName: "ExerciseDetailViewController", bundle: nil)
+        
+        vc.exercise = PregFitData.exercises[indexPath.row]
+        tableView.deselectRow(at: indexPath, animated: false)
+        
+        navigationController?.pushViewController(vc, animated: true)
+        
+    }
+    
+    
 }
 
 extension ExercisesViewController: UISearchBarDelegate {
