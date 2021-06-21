@@ -38,6 +38,7 @@ extension ExercisesViewController: UITableViewDataSource, UITableViewDelegate {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: ExercisesCell.identifier, for: indexPath) as! ExercisesCell
         cell.viewModel = ExercisesViewModel(with: exercise[indexPath.row])
+        cell.selectionStyle = .none
 
         return cell
     }

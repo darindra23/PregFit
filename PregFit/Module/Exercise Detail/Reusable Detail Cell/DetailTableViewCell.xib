@@ -18,23 +18,23 @@
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Requirement" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZHE-Em-DfM">
-                        <rect key="frame" x="10" y="5" width="356" height="21"/>
+                        <rect key="frame" x="20" y="12" width="336" height="21"/>
                         <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
                     <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" scrollEnabled="NO" style="plain" separatorStyle="none" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Usk-k3-XFd">
-                        <rect key="frame" x="0.0" y="26" width="376" height="363"/>
+                        <rect key="frame" x="20" y="33" width="336" height="356"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </tableView>
                 </subviews>
                 <constraints>
-                    <constraint firstItem="Usk-k3-XFd" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="2ot-d7-vQO"/>
-                    <constraint firstItem="ZHE-Em-DfM" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="5" id="6do-Kr-Win"/>
-                    <constraint firstItem="ZHE-Em-DfM" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="JGo-Lh-a1Q"/>
-                    <constraint firstAttribute="trailing" secondItem="ZHE-Em-DfM" secondAttribute="trailing" constant="10" id="PI7-80-aXU"/>
+                    <constraint firstItem="Usk-k3-XFd" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="2ot-d7-vQO"/>
+                    <constraint firstItem="ZHE-Em-DfM" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="12" id="6do-Kr-Win"/>
+                    <constraint firstItem="ZHE-Em-DfM" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="JGo-Lh-a1Q"/>
+                    <constraint firstAttribute="trailing" secondItem="ZHE-Em-DfM" secondAttribute="trailing" constant="20" id="PI7-80-aXU"/>
                     <constraint firstItem="Usk-k3-XFd" firstAttribute="top" secondItem="ZHE-Em-DfM" secondAttribute="bottom" id="UGh-uP-htH"/>
-                    <constraint firstAttribute="trailing" secondItem="Usk-k3-XFd" secondAttribute="trailing" id="nre-ni-vPM"/>
+                    <constraint firstAttribute="trailing" secondItem="Usk-k3-XFd" secondAttribute="trailing" constant="20" id="nre-ni-vPM"/>
                     <constraint firstAttribute="bottom" secondItem="Usk-k3-XFd" secondAttribute="bottom" id="vM2-S8-cAG"/>
                 </constraints>
             </tableViewCellContentView>
