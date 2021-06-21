@@ -23,6 +23,9 @@
             <subviews>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="30" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SxU-zv-ZBc">
                     <rect key="frame" x="40" y="92.5" width="334" height="115"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="334" id="LRT-qe-KUW"/>
+                    </constraints>
                     <fontDescription key="fontDescription" type="system" pointSize="96"/>
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
@@ -34,7 +37,7 @@
                     <nil key="highlightedColor"/>
                 </label>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="3" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sGv-WO-9lg">
-                    <rect key="frame" x="40" y="92.5" width="334" height="115"/>
+                    <rect key="frame" x="40" y="92.5" width="334" height="115.5"/>
                     <fontDescription key="fontDescription" type="system" pointSize="96"/>
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
@@ -44,7 +47,7 @@
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
             <constraints>
                 <constraint firstItem="Q0t-tr-qlT" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="40" id="ADt-ah-Ry0"/>
-                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="sGv-WO-9lg" secondAttribute="bottom" constant="92.5" id="CsH-V3-R42"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="sGv-WO-9lg" secondAttribute="bottom" constant="92" id="CsH-V3-R42"/>
                 <constraint firstItem="Q0t-tr-qlT" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="top" constant="74.25" id="IuL-Qs-Gl4"/>
                 <constraint firstItem="sGv-WO-9lg" firstAttribute="top" secondItem="Q0t-tr-qlT" secondAttribute="bottom" constant="1.5" id="LdC-iP-s5z"/>
                 <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="sGv-WO-9lg" secondAttribute="trailing" constant="40" id="O0x-XB-WaE"/>

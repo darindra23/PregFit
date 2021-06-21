@@ -72,9 +72,9 @@ class HealthKitModal {
                 self.detik+=1
                 print(heartRate)
                 
-                if heartRate > 140{
+                if heartRate >= 140 {
                     NotificationManager.shared.scheduleNotificationForReminderTask()
-                    //self.showAlert()
+//                    self.showAlert()
                     self.stopMockHeartData()
                 }
             }
@@ -109,7 +109,10 @@ class HealthKitModal {
                 print("Error: \(error!.localizedDescription)")
                 return
             }
-            completion(results?[0] as? HKQuantitySample)
+            if let firstResult = results?.first as? HKQuantitySample {
+                completion(firstResult)
+            }
+//            completion(results?.first as? HKQuantitySample)
         }
         healthKitStore.execute(query)
     }
