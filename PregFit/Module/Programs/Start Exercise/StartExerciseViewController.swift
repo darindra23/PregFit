@@ -16,6 +16,7 @@ class StartExerciseViewController: UIViewController {
 
     var program: Program?
     var index: Int = 0
+    var indexEx: Int = 0
 
 
     override func viewDidLoad() {
@@ -52,6 +53,17 @@ class StartExerciseViewController: UIViewController {
         
     }
 
+    @IBAction func infoButton(_ sender: Any) {
+        let vc = ExerciseDetailViewController(nibName: "ExerciseDetailViewController", bundle: nil)
+        
+        for i in PregFitData.exercises{
+            if i.exerciseName == program?.exercises[index].exerciseName{
+                vc.exercise = i
+            }
+        }
+        self.present(vc, animated: true, completion: nil)
+    }
+    
 }
 
 extension StartExerciseViewController: PFTimerViewProtocol {
